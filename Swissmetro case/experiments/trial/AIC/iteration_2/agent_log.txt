@@ -1,0 +1,5 @@
+2025-07-30 11:07:58,361 [INFO] Training agent 1
+2025-07-30 11:07:58,361 [INFO] Training started at Wed Jul 30 11:07:58 2025
+2025-07-30 11:07:58,365 [INFO] LL0: nan, AIC_0: nan, and BIC_0: nan
+2025-07-30 11:08:07,456 [INFO] New best candidate for AIC at episode 31: 7865.8943 (000_210_112_101_103)
+2025-07-30 11:10:56,753 [INFO] New best candidate for AIC at episode 427: 7722.0876 (000_111_115_300_111)
