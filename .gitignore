@@ -16,7 +16,7 @@ __pycache__/
 *.log
 
 # Ignore generated RL training outputs
-Swissmetro case/data/outputs/
+Swissmetro case/data/outputs/rewards_1.csv
 Swissmetro case/data/outputs/rewards.csv
 
 # Ignore virtual environments
