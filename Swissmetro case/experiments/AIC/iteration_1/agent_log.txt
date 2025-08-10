@@ -1,0 +1,32 @@
+2025-08-09 16:47:34,870 [INFO] Training agent 1
+2025-08-09 16:47:34,870 [INFO] Training started at Sat Aug  9 16:47:34 2025
+2025-08-09 16:47:46,400 [INFO] LL0: -5548.281784, AIC_0: 11096.563569, and BIC_0: 11096.563569
+2025-08-09 16:47:46,401 [INFO] New best candidate for AIC at episode 36: 8177.3982 (100_110_110_310_111)
+2025-08-09 16:47:55,087 [INFO] New best candidate for AIC at episode 60: 8029.7575 (000_100_111_106_106)
+2025-08-09 16:49:10,592 [INFO] New best candidate for AIC at episode 254: 7826.4079 (100_101_111_210_103)
+2025-08-09 16:54:04,173 [INFO] New best candidate for AIC at episode 715: 7798.1071 (100_101_110_107_112)
+2025-08-09 17:01:00,021 [INFO] New best candidate for AIC at episode 1171: 7753.2562 (100_101_116_111_101)
+2025-08-09 17:37:32,562 [INFO] Early stopping condition met at episode 2599.
+2025-08-09 17:37:32,796 [INFO] Learning curve saved to Swissmetro case/experiments/trial/AIC/iteration_6/learning_curve.png
+2025-08-09 17:37:37,401 [INFO] Training metrics saved to Swissmetro case/experiments/trial/AIC/iteration_6/training_metrics.txt
+2025-08-09 17:37:37,401 [INFO] Training time: 2997.69 seconds
+2025-08-09 17:38:18,619 [INFO] Reward file update with new results, saved to Swissmetro case/data/outputs/rewards.csv
+2025-08-09 17:38:18,627 [INFO] Deleted job results file Swissmetro case/data/outputs/rewards_1.csv
+2025-08-09 17:38:18,631 [INFO] Training agent 1
+2025-08-09 17:38:18,631 [INFO] Training started at Sat Aug  9 17:38:18 2025
+2025-08-09 17:44:06,537 [INFO] New best candidate for AIC at episode 686: 7731.3813 (100_117_113_101_106)
+2025-08-09 17:50:27,619 [INFO] New best candidate for AIC at episode 1162: 7722.3031 (000_117_113_111_101)
+2025-08-09 17:55:46,047 [INFO] New best candidate for AIC at episode 1476: 7666.2818 (000_111_112_115_103)
+2025-08-09 18:48:39,564 [INFO] New best candidate for AIC at episode 3496: 7665.5117 (000_111_117_111_113)
+2025-08-09 19:11:19,357 [INFO] New best candidate for AIC at episode 4130: 7664.2265 (100_111_117_210_116)
+2025-08-09 19:45:59,017 [INFO] New best candidate for AIC at episode 4934: 7606.9472 (100_111_117_106_113)
+2025-08-09 22:10:57,295 [INFO] Early stopping condition met at episode 7468.
+2025-08-09 22:11:09,788 [INFO] Learning curve saved to Swissmetro case/experiments/trial/AIC/iteration_6/learning_curve.png
+2025-08-09 22:11:21,554 [INFO] Training metrics saved to Swissmetro case/experiments/trial/AIC/iteration_6/training_metrics.txt
+2025-08-09 22:11:21,554 [INFO] Training time: 16358.66 seconds
+2025-08-09 22:12:06,384 [INFO] Reward file update with new results, saved to Swissmetro case/data/outputs/rewards.csv
+2025-08-09 22:12:06,385 [INFO] Deleted job results file Swissmetro case/data/outputs/rewards_1.csv
+2025-08-09 22:12:07,840 [INFO] Action probability heatmap saved to Swissmetro case/experiments/trial/AIC/iteration_6/q_values_distribution.png
+2025-08-09 22:12:08,226 [INFO] Action entropy plot saved to Swissmetro case/experiments/trial/AIC/iteration_6/action_entropy.png
+2025-08-09 22:12:08,310 [INFO] Best candidate trajectory plot for AIC saved to Swissmetro case/experiments/trial/AIC/iteration_6
+2025-08-09 22:12:08,486 [INFO] All best candidate trajectory plot saved.
