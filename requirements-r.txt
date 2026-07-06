@@ -1,0 +1,7 @@
+# Delphos R runtime requirements.
+#
+# Delphos sends model specifications to Apollo through the environment layer.
+# Install these R dependencies before using model estimation.
+
+R>=4.4.0
+apollo==0.3.7

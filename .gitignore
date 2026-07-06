@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# SQLite runtime sidecars created by the result cache.
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Apollo estimation output files are runtime artifacts.
+dataset/**/outputs/
