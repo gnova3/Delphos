@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delphos"
+version = "0.1.0"
+description = "Final-user Delphos package for proposing and estimating discrete choice model specifications."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.8,<2.9",
+  "numpy>=1.26,<3.0",
+  "pandas>=2.2,<3.0",
+  "pyyaml>=6.0,<7.0",
+  "rpy2>=3.5,<4.0",
+  "tqdm>=4.66,<5.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["delphos*"]
