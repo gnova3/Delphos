@@ -1,0 +1,83 @@
+id: id
+choice: choice
+panel: false
+alternatives:
+  walk:
+    id: 1
+    avail: av_walk
+  cycle:
+    id: 2
+    avail: av_cycle
+  pt:
+    id: 3
+    avail: av_pt
+  drive:
+    id: 4
+    avail: av_drive
+attributes:
+  time:
+    id: 2
+    mapping:
+      walk: dur_walking
+      cycle: dur_cycling
+      pt: dur_pt
+      drive: dur_driving
+  access:
+    id: 4
+    mapping:
+      pt: dur_pt_access
+  cost:
+    id: 3
+    mapping:
+      pt: cost_transit
+      drive: cost_drive
+  interchanges:
+    id: 5
+    mapping:
+      pt: pt_interchanges
+  variability:
+    id: 7
+    mapping:
+      drive: driving_traffic_percent
+covariates:
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+  age:
+    id: 3
+    source: age
+    type: numeric
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+  female:
+    id: 1
+    source: female
+    type: categorical
+    levels:
+      - 0
+      - 1
+  car_ownership:
+    id: 5
+    source: car_ownership
+    type: categorical
+    levels:
+      - 0
+      - 1
+      - 2
+
+path_choice_dataset: 2018_london_modechoice_formatted.csv
+rewards_path: rewards
+ll_null: -112409.06456558515
+ll_linear: -71099.11276859081
+n_obs: 81086
+df_name: "LondonModeChoice"

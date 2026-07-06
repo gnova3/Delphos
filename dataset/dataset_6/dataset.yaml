@@ -1,0 +1,67 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  L:
+    id: 1
+    avail: av_1
+  R:
+    id: 2
+    avail: av_2
+attributes:
+  time:
+    id: 2
+    mapping:
+      L: timel
+      R: timer
+  cost:
+    id: 3
+    mapping:
+      L: costl
+      R: costr
+covariates:
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+  gender:
+    id: 1
+    source: gender
+    type: categorical
+    levels:
+      - 1
+      - 2
+  ageclass:
+    id: 3
+    source: ageclass
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+  incclass:
+    id: 2
+    source: incclass
+    type: numeric
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+
+path_choice_dataset: 2009_norway_vtt_formatted.csv
+rewards_path: rewards
+ll_null: -36381.90921322908
+ll_linear: -33026.52306934273
+n_obs: 52488
+df_name: "NorwayVTT"

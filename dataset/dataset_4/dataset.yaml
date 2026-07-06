@@ -1,0 +1,166 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  TRAIN:
+    id: 1
+    avail: train_av
+  SM:
+    id: 2
+    avail: sm_av
+  CAR:
+    id: 3
+    avail: car_av
+attributes:
+  time:
+    id: 2
+    mapping:
+      TRAIN: train_tt_scaled
+      SM: sm_tt_scaled
+      CAR: car_tt_scaled
+  cost:
+    id: 3
+    mapping:
+      TRAIN: train_cost_scaled
+      SM: sm_cost_scaled
+      CAR: car_co_scaled
+  headway:
+    id: 4
+    mapping:
+      TRAIN: train_he_scaled
+      SM: sm_he_scaled
+  seat:
+    id: 6
+    mapping:
+      SM: sm_seats_scaled
+covariates:
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      - 1
+      - 2
+  first:
+    id: 6
+    source: first
+    type: categorical
+    levels:
+      - 0
+      - 1
+  ticket:
+    id: null
+    source: ticket
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 10
+  who:
+    id: null
+    source: who
+    type: categorical
+    levels:
+      - 0
+      - 1
+      - 2
+      - 3
+  luggage:
+    id: null
+    source: luggage
+    type: categorical
+    levels:
+      - 0
+      - 1
+      - 2
+  age:
+    id: 3
+    source: age
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+  male:
+    id: 1
+    source: male
+    type: categorical
+    levels:
+      - 0
+      - 1
+  income:
+    id: 2
+    source: income
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+  ga:
+    id: null
+    source: ga
+    type: categorical
+    levels:
+      - 0
+      - 1
+  origin:
+    id: null
+    source: origin
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 9
+      - 10
+      - 14
+      - 15
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 25
+  dest:
+    id: null
+    source: dest
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 25
+
+path_choice_dataset: 2001_swissmetro_formatted.csv
+rewards_path: rewards
+ll_null: -5548.2817843246685
+ll_linear: -4346.73503300355
+n_obs: 5409
+df_name: "Swissmetro"

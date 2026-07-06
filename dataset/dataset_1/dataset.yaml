@@ -1,0 +1,73 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  car:
+    id: 1
+    avail: av_car
+  bus:
+    id: 2
+    avail: av_bus
+  air:
+    id: 3
+    avail: av_air
+  rail:
+    id: 4
+    avail: av_rail
+attributes:
+  time:
+    id: 2
+    mapping:
+      car: time_car
+      bus: time_bus
+      air: time_air
+      rail: time_rail
+  cost:
+    id: 3
+    mapping:
+      car: cost_car
+      bus: cost_bus
+      air: cost_air
+      rail: cost_rail
+  access:
+    id: 4
+    mapping:
+      bus: access_bus
+      air: access_air
+      rail: access_rail
+  service:
+    id: 6
+    mapping:
+      air: service_air
+      rail: service_rail
+covariates:
+  female:
+    id: 1
+    source: female
+    type: categorical
+    levels:
+      - 0
+      - 1
+  business:
+    id: 6
+    source: business
+    type: categorical
+    levels:
+      - 0
+      - 1
+  income:
+    id: 2
+    source: income
+    type: numeric
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+
+path_choice_dataset: 2019_apollo_modechoice_formatted.csv
+rewards_path: rewards
+ll_null: -8196.020532422835
+ll_linear: -5761.740636212974
+n_obs: 7000
+df_name: "ApolloModeChoice"

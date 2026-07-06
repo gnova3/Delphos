@@ -1,0 +1,65 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  auto:
+    id: 1
+    avail: av_1
+  rail:
+    id: 2
+    avail: av_2
+attributes:
+  time:
+    id: 2
+    mapping:
+      auto: car_ivtt
+      rail: rail_ivtt
+  cost:
+    id: 3
+    mapping:
+      auto: car_cost
+      rail: rail_cost
+  interchanges:
+    id: 5
+    mapping:
+      rail: rail_transfers
+  comfort:
+    id: 6
+    mapping:
+      rail: rail_comfort
+covariates:
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      - 0
+      - 1
+  age:
+    id: 3
+    source: age
+    type: categorical
+    levels:
+      - 0
+      - 1
+  employ_status:
+    id: 7
+    source: employ_status
+    type: categorical
+    levels:
+      - 0
+      - 1
+  gender:
+    id: 1
+    source: gender
+    type: categorical
+    levels:
+      - 0
+      - 1
+
+path_choice_dataset: 1987_netherlands_modechoice_formatted.csv
+rewards_path: rewards
+ll_null: -1047.3453898260777
+ll_linear: -732.2437088105971
+n_obs: 1511
+df_name: "NLModeChoice"

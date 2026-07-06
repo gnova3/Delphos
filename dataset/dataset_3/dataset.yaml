@@ -1,0 +1,150 @@
+id: id
+choice: choice
+panel: false
+alternatives:
+  car:
+    id: 1
+    avail: avail_car
+  bus:
+    id: 2
+    avail: avail_bus
+  rail:
+    id: 3
+    avail: avail_rail
+  taxi:
+    id: 4
+    avail: avail_taxi
+  cycling:
+    id: 5
+    avail: avail_cycling
+  walking:
+    id: 6
+    avail: avail_walking
+attributes:
+  travel_time:
+    id: 2
+    mapping:
+      car: car_travel_time_min
+      bus: bus_ivt_time_min
+      rail: rail_ivt_time_min
+      taxi: taxi_travel_time_min
+      cycling: cycling_travel_time_min
+      walking: walking_travel_time_min
+  travel_cost:
+    id: 3
+    mapping:
+      car: total_car_cost
+      bus: bus_cost_total_per_leg
+      rail: rail_cost_total_per_leg
+      taxi: taxi_cost
+  out_of_vehicle_time:
+    id: 4
+    mapping:
+      bus: ovt_bus_min
+      rail: ovt_rail_min
+covariates:
+  city:
+    id: null
+    source: city
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+  hh_size:
+    id: null
+    source: hh_size
+    type: categorical
+    levels:
+      1: 1 person
+      2: 2 persons
+      3: 3 persons
+      4: 4 or more persons
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      1: home_family
+      2: work_education_medical_dropoff
+      3: shopping
+      4: leisure_other
+  income_perso:
+    id: 2
+    source: income_perso
+    type: categorical
+    levels:
+      1: below_10k
+      2: 10k_20k
+      3: 20k_30k
+      4: 30k_40k
+      5: 40k_50k
+      6: above_50k
+  income_hh:
+    id: null
+    source: income_hh
+    type: categorical
+    levels:
+      1: below_20k
+      2: 20k_40k
+      3: 40k_50k
+      4: 50k_75k
+      5: 75k_100k
+      6: above_100k
+  age:
+    id: 3
+    source: age
+    type: categorical
+    levels:
+      1: 1829
+      2: 3039
+      3: 4049
+      4: 5059
+      5: 60_plus
+  education:
+    id: 7
+    source: education
+    type: categorical
+    levels:
+      1: secondary_or_a_level
+      2: vocational
+      3: undergraduate_degree
+      4: postgraduate_degree
+  female:
+    id: 1
+    source: female
+    type: binary
+    levels:
+      0: false
+      1: true
+  british_origin:
+    id: null
+    source: british_origin
+    type: binary
+    levels:
+      0: false
+      1: true
+  occ:
+    id: null
+    source: occ
+    type: categorical
+    levels:
+      1: professional_managerial_technical
+      2: service_sales_creative
+      3: manual_agriculture_maintenance
+      4: nonworking_unemployed_retired
+  n_car:
+    id: 5
+    source: n_car
+    type: categorical
+    levels:
+      0: no_car
+      1: one_car
+      2: two_or_more_cars
+
+path_choice_dataset: decisions_modechoice_formatted.csv
+rewards_path: rewards
+ll_null: -11233.443461147928
+ll_linear: -4294.535523013118
+n_obs: 9356
+df_name: "Decisions"

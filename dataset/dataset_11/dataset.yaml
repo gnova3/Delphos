@@ -1,0 +1,70 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  alt1:
+    id: 1
+    avail: av_alt1
+  alt2:
+    id: 2
+    avail: av_alt2
+  alt3:
+    id: 3
+    avail: av_alt3
+attributes:
+  time:
+    id: 2
+    mapping:
+      alt1: tt1
+      alt2: tt2
+      alt3: tt3
+  cost:
+    id: 3
+    mapping:
+      alt1: tc1
+      alt2: tc2
+      alt3: tc3
+covariates:
+  age:
+    id: 3
+    source: age
+    type: numeric
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+  sex:
+    id: 1
+    source: sex
+    type: categorical
+    levels:
+      - 1
+      - 2
+  edu:
+    id: 7
+    source: edu
+    type: categorical
+    levels:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+  inchh:
+    id: 2
+    source: inchh
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+
+path_choice_dataset: 2016_netherlands_vot_formatted.csv
+rewards_path: rewards
+ll_null: -966.7788140279351
+ll_linear: -924.8098633267471
+n_obs: 850
+df_name: "VanCranenburghVOT"

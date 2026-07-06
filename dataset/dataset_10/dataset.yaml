@@ -1,0 +1,80 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  transit:
+    id: 1
+    avail: av_1
+  private:
+    id: 2
+    avail: av_2
+attributes:
+  time:
+    id: 2
+    mapping:
+      transit: timept
+      private: timecar
+  cost:
+    id: 3
+    mapping:
+      transit: costpt
+      private: costcar
+  interchanges:
+    id: 5
+    mapping:
+      transit: nbtransf
+  OVT_PT:
+    id: 4
+    mapping:
+      transit: ovt_pt_transit
+covariates:
+  income:
+    id: 2
+    source: income
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+  gender:
+    id: 1
+    source: gender
+    type: categorical
+    levels:
+      - 1
+      - 2
+  caravail:
+    id: 5
+    source: caravail
+    type: categorical
+    levels:
+      - 0
+      - 1
+  education:
+    id: 7
+    source: education
+    type: categorical
+    levels:
+      - 0
+      - 1
+      - 2
+      - 3
+  age:
+    id: 3
+    source: age
+    type: numeric
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+
+path_choice_dataset: 2018_optima_modechoice_formatted.csv
+rewards_path: rewards
+ll_null: -1054.276861631649
+ll_linear: -812.5565155143817
+n_obs: 1521
+df_name: "Optima"

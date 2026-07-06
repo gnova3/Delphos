@@ -1,0 +1,146 @@
+{
+    "trainer": {
+        "trainer": "Trainer",
+        "episodes": 70000,
+        "learn_steps": 10000,
+        "batch_size": 64,
+        "horizon_kappa": 2.0,
+        "num_tasks": 7,
+        "checkpoint_dir": "checkpoints/full_agent_task_7_seed_123",
+        "agent": {
+            "agent": "Delphos",
+            "mode": "full_training",
+            "encoder_kind": "deepset",
+            "state_dim": 64,
+            "num_actions": 297,
+            "z_cfg": {
+                "K": 7,
+                "T": 3,
+                "G": 2,
+                "C": 7,
+                "d_att": 16,
+                "d_tr": 8,
+                "d_taste": 8,
+                "d_cov": 16,
+                "d_term": 64,
+                "d_state": 128,
+                "context_dim": 0,
+                "head_flag": false,
+                "pooling": "mean",
+                "attention_heads": 4,
+                "attention_layers": 1,
+                "attention_dropout": 0.0
+            },
+            "encoder_class": "DeepSetEncoder",
+            "policy_class": "QNetwork",
+            "target_class": "QNetwork",
+            "learning_rate": 0.001,
+            "discount_factor": 0.9,
+            "target_soft_tau": 0.005,
+            "grad_clip_norm": 1.0,
+            "device": "cpu",
+            "use_amp": false,
+            "parameters": {
+                "total": 344906,
+                "trainable": 344906,
+                "encoder_trainable": 27384,
+                "policy_trainable": 158761
+            },
+            "encoder_frozen": false,
+            "policy_frozen": false
+        }
+    },
+    "agent": {
+        "agent": "Delphos",
+        "mode": "full_training",
+        "encoder_kind": "deepset",
+        "state_dim": 64,
+        "num_actions": 297,
+        "z_cfg": {
+            "K": 7,
+            "T": 3,
+            "G": 2,
+            "C": 7,
+            "d_att": 16,
+            "d_tr": 8,
+            "d_taste": 8,
+            "d_cov": 16,
+            "d_term": 64,
+            "d_state": 128,
+            "context_dim": 0,
+            "head_flag": false,
+            "pooling": "mean",
+            "attention_heads": 4,
+            "attention_layers": 1,
+            "attention_dropout": 0.0
+        },
+        "encoder_class": "DeepSetEncoder",
+        "policy_class": "QNetwork",
+        "target_class": "QNetwork",
+        "learning_rate": 0.001,
+        "discount_factor": 0.9,
+        "target_soft_tau": 0.005,
+        "grad_clip_norm": 1.0,
+        "device": "cpu",
+        "use_amp": false,
+        "parameters": {
+            "total": 344906,
+            "trainable": 344906,
+            "encoder_trainable": 27384,
+            "policy_trainable": 158761
+        },
+        "encoder_frozen": false,
+        "policy_frozen": false
+    },
+    "tasks": {
+        "0": {
+            "id": 0,
+            "name": "ApolloModeChoice",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_1/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_1/2019_apollo_modechoice_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_1/rewards.sqlite"
+        },
+        "1": {
+            "id": 1,
+            "name": "SwissmetroRouteChoice",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_2/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_2/2018_apollo_routechoice_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_2/rewards.sqlite"
+        },
+        "4": {
+            "id": 4,
+            "name": "NLModeChoice",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_5/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_5/1987_netherlands_modechoice_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_5/rewards.sqlite"
+        },
+        "5": {
+            "id": 5,
+            "name": "NorwayVTT",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_6/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_6/2009_norway_vtt_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_6/rewards.sqlite"
+        },
+        "6": {
+            "id": 6,
+            "name": "Arentze2013",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_7/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_7/2013_arentze_molin_mm20_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_7/rewards.sqlite"
+        },
+        "7": {
+            "id": 7,
+            "name": "SpainParkingchoice",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_8/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_8/2014_spain_parkingchoice_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_8/rewards.sqlite"
+        },
+        "8": {
+            "id": 8,
+            "name": "LondonModeChoice",
+            "yaml_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_9/dataset.yaml",
+            "dataset_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_9/2018_london_modechoice_formatted.csv",
+            "rewards_path": "/Users/gnova/Developer/Delphos-core/dataset/dataset_9/rewards.sqlite"
+        }
+    }
+}
