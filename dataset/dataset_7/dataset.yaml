@@ -1,0 +1,59 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  pv:
+    id: 1
+    avail: av_1
+  pt:
+    id: 2
+    avail: av_2
+  pv_pt:
+    id: 3
+    avail: av_3
+attributes:
+  ivt:
+    id: 2
+    mapping:
+      pv: ivt_pv
+      pt: ivt_pt
+      pv_pt: ivt_pv_pt
+  ovt:
+    id: 4
+    mapping:
+      pv: ovt_pv
+      pt: ovt_pt
+      pv_pt: ovt_pv_pt
+  tc:
+    id: 3
+    mapping:
+      pv: tc_pv
+      pt: tc_pt
+      pv_pt: tc_pv_pt
+  tra:
+    id: 5
+    mapping:
+      pv: tra_pv
+      pt: tra_pt
+      pv_pt: tra_pv_pt
+  rel:
+    id: 7
+    mapping:
+      pv: rel_pv
+      pt: rel_pt
+covariates:
+  purp:
+    id: 4
+    source: purp
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+path_choice_dataset: 2013_arentze_molin_mm20_formatted.csv
+rewards_path: rewards
+ll_null: -5885.92985641416
+ll_linear: -4734.019233388547
+n_obs: 6570
+df_name: "Arentze2013"

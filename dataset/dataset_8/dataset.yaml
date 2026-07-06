@@ -1,0 +1,60 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  FSP:
+    id: 1
+    avail: av_1
+  PSP:
+    id: 2
+    avail: av_2
+  PUP:
+    id: 3
+    avail: av_3
+attributes:
+  fee:
+    id: 3
+    mapping:
+      FSP: fee1
+      PSP: fee2
+      PUP: fee3
+  total_access:
+    id: 4
+    mapping:
+      FSP: total_access_fsp
+      PSP: total_access_psp
+      PUP: total_access_pup
+covariates:
+  gender:
+    id: 1
+    source: gender
+    type: categorical
+    levels:
+      - 0
+      - 1
+  age:
+    id: 3
+    source: age
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+  income:
+    id: 2
+    source: income
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+
+path_choice_dataset: 2014_spain_parkingchoice_formatted.csv
+rewards_path: rewards
+ll_null: -1731.4129669409378
+ll_linear: -1121.7187640093175
+n_obs: 1576
+df_name: "SpainParkingchoice"

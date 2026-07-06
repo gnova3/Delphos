@@ -1,0 +1,178 @@
+{
+  "attributes": [
+    {
+      "id": 2,
+      "name": "IVTT",
+      "description": "In Vehicle Travel Time",
+      "relatives": [
+        "travel_time",
+        "next_pt_time",
+        "total_travel_time"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "TC",
+      "description": "Travel cost",
+      "relatives": [
+        "travel_cost",
+        "total_travel_cost",
+        "fee",
+        "fare",
+        "parking_cost",
+        "parking_fee",
+        "toll"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "OVTT",
+      "description": "Out of Vehicle Travel Time",
+      "relatives": [
+        "access_time",
+        "egress_time",
+        "waiting_time",
+        "headway",
+        "searching_time",
+        "parking_time"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "TRA",
+      "description": "Transfer",
+      "relatives": [
+        "transfers",
+        "num_transfers",
+        "number_of_transfers",
+        "interchanges",
+        "transfer_time"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "SQ",
+      "description": "Service quality",
+      "relatives": [
+        "service_quality",
+        "seat_availability",
+        "comfort",
+        "availability",
+        "capacity",
+        "crowding"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "reliability",
+      "description": "Reliability of the transport mode.",
+      "relatives": [
+        "reliability",
+        "delay",
+        "traffic_variability"
+      ]
+    }
+  ],
+  "covariates": [
+    {
+      "id": 1,
+      "name": "gender",
+      "description": "Self-identified gender of the traveler.",
+      "relatives": [
+        "sex",
+        "gender_coded",
+        "male",
+        "female"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "income",
+      "description": "Income of the individual traveler. otherwise, household income.",
+      "relatives": [
+        "income_individual",
+        "income_persona",
+        "income_hh"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "age",
+      "description": "Age of the individual in years.",
+      "relatives": [
+        "age",
+        "age_band"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "purpose",
+      "description": "Purpose of the trip.",
+      "relatives": [
+        "purpose"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "car_access",
+      "description": "Car availability for the trip",
+      "relatives": [
+        "car_avail",
+        "car_access",
+        "car_availability",
+        "NbCar",
+        "NbCar_persona",
+        "NbCar_hh",
+        "nocar",
+        "driving_license"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "business",
+      "description": "dummy variable for business trips.",
+      "relatives": [
+        "business"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "education",
+      "description": "Education level of the individual. otherwise, occupation.",
+      "relatives": [
+        "education",
+        "ed",
+        "occupation"
+      ]
+    }
+  ],
+  "transforms": [
+    {
+      "id": 1,
+      "name": "Linear",
+      "description": "Linear transformation (no change)."
+    },
+    {
+      "id": 2,
+      "name": "Log",
+      "description": "Logarithmic transformation."
+    },
+    {
+      "id": 3,
+      "name": "Box-Cox",
+      "description": "Box-Cox transformation."
+    }
+  ],
+  "tastes": [
+    {
+      "id": 1,
+      "name": "generic",
+      "description": "Generic taste across alternatives."
+    },
+    {
+      "id": 2,
+      "name": "specific",
+      "description": "Alternative-specific taste."
+    }
+  ]
+}

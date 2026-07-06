@@ -1,0 +1,72 @@
+id: id
+choice: choice
+panel: true
+alternatives:
+  alt1:
+    id: 1
+    avail: av_1
+  alt2:
+    id: 2
+    avail: av_2
+attributes:
+  time:
+    id: 2
+    mapping:
+      alt1: tt1
+      alt2: tt2
+  cost:
+    id: 3
+    mapping:
+      alt1: tc1
+      alt2: tc2
+  headway:
+    id: 4
+    mapping:
+      alt1: hw1
+      alt2: hw2
+  interchanges:
+    id: 5
+    mapping:
+      alt1: ch1
+      alt2: ch2
+covariates:
+  hh_inc_abs:
+    id: 2
+    source: hh_inc_abs
+    type: numeric
+    levels:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+  car_availability:
+    id: 5
+    source: car_availability
+    type: categorical
+    levels:
+      - 0
+      - 1
+  business:
+    id: 6
+    source: business
+    type: categorical
+    levels:
+      - 0
+      - 1
+  purpose:
+    id: 4
+    source: purpose
+    type: categorical
+    levels:
+      - 1
+      - 2
+      - 3
+      - 4
+
+path_choice_dataset: 2018_apollo_routechoice_formatted.csv
+rewards_path: rewards
+ll_null: -2420.4699545153308
+ll_linear: -1665.6199462956718
+n_obs: 3492
+df_name: "SwissmetroRouteChoice"
