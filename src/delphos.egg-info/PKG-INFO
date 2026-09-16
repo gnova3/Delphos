@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: delphos
+Version: 0.1.0
+Summary: Final-user Delphos package for proposing and estimating discrete choice model specifications.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch<2.9,>=2.0
+Requires-Dist: numpy<3.0,>=1.26
+Requires-Dist: pandas<3.0,>=2.2
+Requires-Dist: pyyaml<7.0,>=6.0
+Requires-Dist: tqdm<5.0,>=4.66
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# Delphos
+
+Delphos is the final-user inference package for proposing discrete choice model
+specifications with a trained Delphos agent and estimating those specifications
+through the Apollo/R environment.
+
+## Install
+
+Install Python requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+Install R requirements:
+
+```bash
+Rscript install_r_requirements.R
+```
+
+## Quick start
+
+```python
+import delphos as dp
+
+agent = dp.load_agent()
+dataset = dp.load_dataset("Swissmetro")
+
+models = agent.propose(dataset, n_models=10)
+```
+
+By default, Delphos only returns proposed model specifications. To send the
+models to Apollo/R and return modelling results:
+
+```python
+models = agent.propose(dataset, n_models=10, estimate=True)
+df = models.to_dataframe()
+```
+
+## Datasets
+
+Bundled datasets can be inspected with:
+
+```python
+dp.list_datasets()
+```
+
+User datasets can be added with `dp.create_dataset(...)` by providing a CSV and
+a Delphos schema for alternatives, attributes, and covariates.
+
+## Tutorials
+
+The top-level [tutorials](tutorials/README.md) folder contains a final-user
+learning path from basic proposal generation to modelling-space control,
+reward-based ranking, quick runs, robust long runs, and Apollo/R environment
+debugging.

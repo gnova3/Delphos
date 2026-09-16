@@ -31,9 +31,8 @@ def evaluate_specification(
     max_free_parameters: Optional[int] = 50,
 ) -> pd.DataFrame:
     
-    from delphos.env.apollo.estimator import ensure_apollo_ready, run_apollo_estimation
+    from delphos.env.apollo.estimator import run_apollo_estimation
 
-    ensure_apollo_ready()
     rewards_path = Path(task.rewards_path)    
     outputs_path = task.dataset_path.parent / "outputs"
     outputs_path.mkdir(parents=True, exist_ok=True)
