@@ -64,5 +64,5 @@ def _check_r_environment():
             stacklevel=2,
         )
 
-# Run the check in a background thread to avoid blocking the import!
-threading.Thread(target=_check_r_environment, daemon=True).start()
+# Run the check synchronously so the print output shows up properly in Jupyter Notebooks
+_check_r_environment()
