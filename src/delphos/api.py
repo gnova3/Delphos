@@ -32,20 +32,17 @@ class DelphosModel:
         dataset: str | int | Path | Task,
         *,
         n_models: int = 25,
-        max_attempts: int = 250,
-        strategy: str = "topk",
-        epsilon: float = 0.10,
-        temperature: float = 1.0,
-        top_k: int = 5,
-        horizon_kappa: float = 2.0,
-        linear_additive: bool = True,
         estimate: bool = False,
         estimate_kwargs: dict[str, Any] | None = None,
         seed: int | None = None,
         device: str | None = None,
+        **advanced_kwargs,
     ) -> ProposalSet:
         task = _coerce_task(dataset)
         _validate_task_against_catalogue(task, self.catalogue)
+        
+        linear_additive = advanced_kwargs.get("linear_additive", True)
+        
         runtime = build_runtime(
             task=task,
             catalogue=self.catalogue,
@@ -56,12 +53,12 @@ class DelphosModel:
             agent=self.agent,
             runtime=runtime,
             n_models=n_models,
-            max_attempts=max_attempts,
-            strategy=strategy,
-            epsilon=epsilon,
-            temperature=temperature,
-            top_k=top_k,
-            horizon_kappa=horizon_kappa,
+            max_attempts=advanced_kwargs.get("max_attempts", 250),
+            strategy=advanced_kwargs.get("strategy", "topk"),
+            epsilon=advanced_kwargs.get("epsilon", 0.10),
+            temperature=advanced_kwargs.get("temperature", 1.0),
+            top_k=advanced_kwargs.get("top_k", 5),
+            horizon_kappa=advanced_kwargs.get("horizon_kappa", 2.0),
             estimate=estimate,
             estimate_kwargs=estimate_kwargs,
             seed=seed,

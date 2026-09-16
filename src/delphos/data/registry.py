@@ -15,16 +15,13 @@ class DatasetInfo:
     path: Path
 
 
-def repository_root() -> Path:
-    return Path(__file__).resolve().parents[2]
-
+import importlib.resources
 
 def dataset_root() -> Path:
-    return repository_root() / "dataset"
-
+    return Path(str(importlib.resources.files("delphos.data.bundled.datasets")))
 
 def checkpoints_root() -> Path:
-    return repository_root() / "checkpoints"
+    return Path(str(importlib.resources.files("delphos.data.bundled.checkpoints")))
 
 
 def default_checkpoint_path() -> Path:

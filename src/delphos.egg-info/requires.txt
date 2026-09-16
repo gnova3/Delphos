@@ -1,0 +1,9 @@
+torch<2.9,>=2.0
+numpy<3.0,>=1.26
+pandas<3.0,>=2.2
+pyyaml<7.0,>=6.0
+tqdm<5.0,>=4.66
+
+[dev]
+pytest
+pytest-cov
