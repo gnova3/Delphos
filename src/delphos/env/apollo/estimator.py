@@ -80,9 +80,9 @@ def run_apollo_estimation(
     task: Task,
     apollo_specification: ApolloSpecification,
     output_directory: Path,
-    info: bool = False,
-    save: bool = False,
-    save_summary_file: bool = False,
+    info: bool = True,
+    save: bool = True,
+    save_summary_file: bool = True,
     debug_apollo: bool = False,
     debug_path: Optional[Path] = None,
 ) -> pd.DataFrame:
@@ -106,6 +106,7 @@ def run_apollo_estimation(
         output_directory=output_directory,
         summary_file=summary_path,
         save=save,
+        info=info,
     )
 
     if debug_apollo and debug_path is not None:
@@ -119,21 +120,21 @@ def run_apollo_estimation(
     r_script_path.write_text(r_code, encoding="utf-8")
 
     try:
-        subprocess.run(
+        result = subprocess.run(
             ["Rscript", str(r_script_path)],
             capture_output=True,
             text=True,
             check=True
         )
+        if info:
+            print(result.stdout)
     except subprocess.CalledProcessError as exc:
         logger.exception("Estimation failed: %s", spec_key)
         if debug_apollo and debug_path is not None:
             write_debug_file(debug_path / "error.txt", exc.stderr or exc.stdout)
             write_debug_file(debug_path / "stdout.txt", exc.stdout)
         raise RuntimeError(f"Rscript failed during estimation:\n{exc.stderr}") from exc
-    finally:
-        if not debug_apollo:
-            r_script_path.unlink(missing_ok=True)
+
 
     if not summary_path.exists():
         raise RuntimeError(f"Estimation completed but summary file {summary_path} was not created.")
@@ -144,8 +145,7 @@ def run_apollo_estimation(
     if info:
         logger.info("Summary saved: %s", summary_path)
     
-    if not save_summary_file:
-        summary_path.unlink(missing_ok=True)
+
 
     return summary
 
@@ -155,7 +155,8 @@ def generate_apollo_r_script(
     apollo_specification: ApolloSpecification,
     output_directory: Path,
     summary_file: Path,
-    save: bool = False,
+    save: bool = True,
+    info: bool = True,
 ) -> str:
 
     dataset_path = str(Path(task.dataset_path).resolve()).replace("\\", "/")
@@ -204,7 +205,7 @@ def generate_apollo_r_script(
     {apollo_specification.probability_code}
 
 
-    settings <- list(printLevel=0, writeIter=FALSE, silent=TRUE)
+    settings <- list(printLevel=ifelse({str(info).upper()}, 3, 0), writeIter=FALSE, silent=ifelse({str(info).upper()}, FALSE, TRUE))
 
     model <- apollo_estimate(
         apollo_beta,
