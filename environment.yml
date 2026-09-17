@@ -1,0 +1,28 @@
+name: delphos-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python Stack
+  - python=3.12
+  - pip
+  - pandas>=2.2,<3.0
+  - numpy>=1.26,<3.0
+  - pyyaml>=6.0,<7.0
+  - tqdm>=4.66,<5.0
+  - pytorch>=2.0,<2.9
+  
+  # R Stack
+  - r-base=4.3.3
+  - r-matrix
+  - r-numderiv
+  - r-rcpp
+  - r-rcppeigen
+  - r-sandwich
+  - r-mvtnorm
+  - r-maxlik
+  - r-remotes  # Used to pin CRAN package versions
+  
+  # Delphos Installation
+  - pip:
+    - -e .
