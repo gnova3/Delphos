@@ -22,9 +22,9 @@ from delphos.env.apollo.schema import ApolloSpecification
 def evaluate_specification(
     task: Task,
     apollo_specification: ApolloSpecification,
-    info: bool = False,
-    save: bool = False,
-    save_summary_file: bool = False,
+    info: bool = True,
+    save: bool = True,
+    save_summary_file: bool = True,
     debug_apollo: bool = False,
     debug_path: Optional[Path] = None,
     raise_on_error: bool = False,
