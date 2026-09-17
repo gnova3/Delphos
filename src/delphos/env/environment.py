@@ -34,7 +34,7 @@ def evaluate_specification(
     from delphos.env.apollo.estimator import run_apollo_estimation
 
     rewards_path = Path(task.rewards_path)    
-    outputs_path = task.dataset_path.parent / "outputs"
+    outputs_path = Path.cwd() / "apollo_outputs"
     outputs_path.mkdir(parents=True, exist_ok=True)
     cache = ResultCache(task.rewards_path)
 
