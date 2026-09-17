@@ -42,6 +42,11 @@ src/delphos/data/bundled/datasets/dataset_4/dataset.yaml
 src/delphos/data/bundled/datasets/dataset_4/rewards.sqlite
 src/delphos/data/bundled/datasets/dataset_4/rewards.sqlite-shm
 src/delphos/data/bundled/datasets/dataset_4/rewards.sqlite-wal
+src/delphos/data/bundled/datasets/dataset_4/outputs/1110_2212_3211_4110_5000_6110_7000_estimates.csv
+src/delphos/data/bundled/datasets/dataset_4/outputs/1110_2212_3211_4110_5000_6110_7000_estimation.R
+src/delphos/data/bundled/datasets/dataset_4/outputs/1110_2212_3211_4110_5000_6110_7000_model.rds
+src/delphos/data/bundled/datasets/dataset_4/outputs/1110_2212_3211_4110_5000_6110_7000_output.txt
+src/delphos/data/bundled/datasets/dataset_4/outputs/1110_2212_3211_4110_5000_6110_7000_summary.csv
 src/delphos/data/bundled/datasets/dataset_5/1987_netherlands_modechoice_formatted.csv
 src/delphos/data/bundled/datasets/dataset_5/dataset.yaml
 src/delphos/data/bundled/datasets/dataset_6/2009_norway_vtt_formatted.csv

@@ -10,3 +10,6 @@ __pycache__/
 # Apollo estimation output files are runtime artifacts.
 dataset/**/outputs/
 test_warn.py
+apollo_outputs/
+*.rds
+*.R
