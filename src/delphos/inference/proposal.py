@@ -61,8 +61,26 @@ class ProposalSet:
 
     def to_dataframe(self):
         import pandas as pd
+        from pathlib import Path
 
-        return pd.DataFrame(self.to_records())
+        df = pd.DataFrame(self.to_records())
+
+        # Dynamically calculate apollo_output_path for each row
+        if "specification_key" in df.columns:
+            df["apollo_output_path"] = df["specification_key"].apply(
+                lambda key: str(Path("apollo_outputs") / f"{key}_output.txt").replace("\\", "/")
+            )
+
+        desired_columns = [
+            'task_name', 'estimated', 'n_terms', 'numParams', 'numResids', 'maximum',
+            'vcHessianConditionNumber', 'successfulEstimation', 'LL0', 'LLC',
+            'LLout', 'rho2_0', 'adjRho2_0', 'rho2_C', 'adjRho2_C', 'AIC', 'BIC', 'apollo_output_path'
+        ]
+        
+        # Only keep columns that actually exist in the DataFrame
+        columns_to_keep = [col for col in desired_columns if col in df.columns]
+        
+        return df[columns_to_keep]
 
     def estimate(self, task, **estimate_kwargs) -> "ProposalSet":
         """Estimate all proposals through the Delphos environment."""
