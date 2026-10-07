@@ -13,3 +13,4 @@ test_warn.py
 apollo_outputs/
 *.rds
 *.R
+.venv/
