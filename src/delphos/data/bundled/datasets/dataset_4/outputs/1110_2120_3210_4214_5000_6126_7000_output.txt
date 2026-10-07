@@ -1,0 +1,611 @@
+Model run by gnova using Apollo 0.3.7 on R 4.5.1 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : 1110_2120_3210_4214_5000_6126_7000
+Model description                           : MNL proposed by Delphos
+Model run at                                : 2026-09-17 09:16:03.868319
+Estimation method                           : bgw
+Estimation diagnosis                        : Relative function convergence (favorable)
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -12.04933
+     reciprocal of condition number         : 0.00348294
+Number of individuals                       : 601
+Number of rows in database                  : 5409
+Number of modelled outcomes                 : 5409
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -5548.28
+LL at equal shares, LL(0)                   : -5548.28
+LL at observed shares, LL(C)                : -4702.95
+LL(final)                                   : -4232.01
+Rho-squared vs equal shares                  :  0.2372 
+Adj.Rho-squared vs equal shares              :  0.2354 
+Rho-squared vs observed shares               :  0.1001 
+Adj.Rho-squared vs observed shares           :  0.0984 
+AIC                                         :  8484.02 
+BIC                                         :  8549.98 
+
+Estimated parameters                        : 10
+Time taken (hh:mm:ss)                       :  00:00:0.65 
+     pre-estimation                         :  00:00:0.13 
+     estimation                             :  00:00:0.22 
+     post-estimation                        :  00:00:0.3 
+Iterations                                  :  17  
+
+Unconstrained optimisation.
+
+Estimates:
+                                   Estimate        s.e.   t.rat.(0)    Rob.s.e.
+ASC_TRAIN                            0.3702     0.15903       2.328      0.3718
+ASC_SM                               0.5089     0.10504       4.845      0.3364
+ASC_CAR                              0.0000          NA          NA          NA
+b_TRAIN_time                        -1.3802     0.08539     -16.164      0.3181
+b_SM_time                           -1.0227     0.09589     -10.665      0.5975
+b_CAR_time                          -0.9773     0.06956     -14.049      0.2653
+b_cost_generic_log                  -2.7210     0.13381     -20.335      0.3485
+b_headway_generic_log_purpose_1     -1.1324     0.24086      -4.702      0.3220
+b_headway_generic_log_purpose_2     -0.9212     0.18483      -4.984      0.2237
+b_SM_seat_first_0                   -0.6258     0.11321      -5.528      0.2024
+b_SM_seat_first_1                    0.2601     0.16468       1.580      0.3136
+                                Rob.t.rat.(0)
+ASC_TRAIN                              0.9956
+ASC_SM                                 1.5129
+ASC_CAR                                    NA
+b_TRAIN_time                          -4.3390
+b_SM_time                             -1.7118
+b_CAR_time                            -3.6831
+b_cost_generic_log                    -7.8078
+b_headway_generic_log_purpose_1       -3.5169
+b_headway_generic_log_purpose_2       -4.1170
+b_SM_seat_first_0                     -3.0910
+b_SM_seat_first_1                      0.8294
+
+
+Overview of choices for MNL model component :
+                                   TRAIN      SM     CAR
+Times available                  5409.00 5409.00 4437.00
+Times chosen                      740.00 3234.00 1435.00
+Percentage chosen overall          13.68   59.79   26.53
+Percentage chosen when available   13.68   59.79   32.34
+
+
+
+Classical covariance matrix:
+                                                      ASC_TRAIN
+ASC_TRAIN                                              0.025292
+ASC_SM                                                 0.009842
+b_TRAIN_time                                          -0.008074
+b_SM_time                                             -0.002108
+b_CAR_time                                             0.003162
+b_cost_generic_log                                  -6.1193e-04
+b_headway_generic_log_purpose_1                       -0.017877
+b_headway_generic_log_purpose_2                       -0.013569
+b_SM_seat_first_0                                      0.001413
+b_SM_seat_first_1                                    -2.379e-05
+                                                         ASC_SM
+ASC_TRAIN                                              0.009842
+ASC_SM                                                 0.011032
+b_TRAIN_time                                        -6.4616e-04
+b_SM_time                                             -0.003603
+b_CAR_time                                             0.003810
+b_cost_generic_log                                    -0.001633
+b_headway_generic_log_purpose_1                       -0.006522
+b_headway_generic_log_purpose_2                       -0.004968
+b_SM_seat_first_0                                     -0.001730
+b_SM_seat_first_1                                     -0.002240
+                                                   b_TRAIN_time
+ASC_TRAIN                                             -0.008074
+ASC_SM                                              -6.4616e-04
+b_TRAIN_time                                           0.007291
+b_SM_time                                              0.003927
+b_CAR_time                                             0.002026
+b_cost_generic_log                                   8.4442e-04
+b_headway_generic_log_purpose_1                        0.001507
+b_headway_generic_log_purpose_2                     -4.6976e-04
+b_SM_seat_first_0                                   -7.1090e-04
+b_SM_seat_first_1                                   -5.4486e-04
+                                                      b_SM_time
+ASC_TRAIN                                             -0.002108
+ASC_SM                                                -0.003603
+b_TRAIN_time                                           0.003927
+b_SM_time                                              0.009196
+b_CAR_time                                             0.003231
+b_cost_generic_log                                     0.001096
+b_headway_generic_log_purpose_1                     -1.2875e-04
+b_headway_generic_log_purpose_2                      -9.798e-05
+b_SM_seat_first_0                                    4.4954e-04
+b_SM_seat_first_1                                    2.3264e-04
+                                                     b_CAR_time
+ASC_TRAIN                                              0.003162
+ASC_SM                                                 0.003810
+b_TRAIN_time                                           0.002026
+b_SM_time                                              0.003231
+b_CAR_time                                             0.004839
+b_cost_generic_log                                     0.001221
+b_headway_generic_log_purpose_1                     -8.4412e-04
+b_headway_generic_log_purpose_2                      4.8790e-04
+b_SM_seat_first_0                                   -3.4300e-04
+b_SM_seat_first_1                                   -8.1853e-04
+                                             b_cost_generic_log
+ASC_TRAIN                                           -6.1193e-04
+ASC_SM                                                -0.001633
+b_TRAIN_time                                         8.4442e-04
+b_SM_time                                              0.001096
+b_CAR_time                                             0.001221
+b_cost_generic_log                                     0.017905
+b_headway_generic_log_purpose_1                      9.7987e-04
+b_headway_generic_log_purpose_2                      -8.672e-05
+b_SM_seat_first_0                                      0.001499
+b_SM_seat_first_1                                   -1.2728e-04
+                                b_headway_generic_log_purpose_1
+ASC_TRAIN                                             -0.017877
+ASC_SM                                                -0.006522
+b_TRAIN_time                                           0.001507
+b_SM_time                                           -1.2875e-04
+b_CAR_time                                          -8.4412e-04
+b_cost_generic_log                                   9.7987e-04
+b_headway_generic_log_purpose_1                        0.058013
+b_headway_generic_log_purpose_2                        0.022889
+b_SM_seat_first_0                                    -1.485e-05
+b_SM_seat_first_1                                   -2.6741e-04
+                                b_headway_generic_log_purpose_2
+ASC_TRAIN                                             -0.013569
+ASC_SM                                                -0.004968
+b_TRAIN_time                                        -4.6976e-04
+b_SM_time                                            -9.798e-05
+b_CAR_time                                           4.8790e-04
+b_cost_generic_log                                   -8.672e-05
+b_headway_generic_log_purpose_1                        0.022889
+b_headway_generic_log_purpose_2                        0.034163
+b_SM_seat_first_0                                   -1.9809e-04
+b_SM_seat_first_1                                     1.288e-05
+                                              b_SM_seat_first_0
+ASC_TRAIN                                              0.001413
+ASC_SM                                                -0.001730
+b_TRAIN_time                                        -7.1090e-04
+b_SM_time                                            4.4954e-04
+b_CAR_time                                          -3.4300e-04
+b_cost_generic_log                                     0.001499
+b_headway_generic_log_purpose_1                      -1.485e-05
+b_headway_generic_log_purpose_2                     -1.9809e-04
+b_SM_seat_first_0                                      0.012816
+b_SM_seat_first_1                                      0.001322
+                                              b_SM_seat_first_1
+ASC_TRAIN                                            -2.379e-05
+ASC_SM                                                -0.002240
+b_TRAIN_time                                        -5.4486e-04
+b_SM_time                                            2.3264e-04
+b_CAR_time                                          -8.1853e-04
+b_cost_generic_log                                  -1.2728e-04
+b_headway_generic_log_purpose_1                     -2.6741e-04
+b_headway_generic_log_purpose_2                       1.288e-05
+b_SM_seat_first_0                                      0.001322
+b_SM_seat_first_1                                      0.027120
+
+Robust covariance matrix:
+                                                      ASC_TRAIN
+ASC_TRAIN                                              0.138268
+ASC_SM                                                 0.079748
+b_TRAIN_time                                          -0.078051
+b_SM_time                                             -0.083892
+b_CAR_time                                             0.001976
+b_cost_generic_log                                     0.008577
+b_headway_generic_log_purpose_1                       -0.039902
+b_headway_generic_log_purpose_2                       -0.011811
+b_SM_seat_first_0                                      0.009133
+b_SM_seat_first_1                                     -0.008663
+                                                         ASC_SM
+ASC_TRAIN                                              0.079748
+ASC_SM                                                 0.113140
+b_TRAIN_time                                          -0.050027
+b_SM_time                                             -0.138620
+b_CAR_time                                            -0.006971
+b_cost_generic_log                                     0.004462
+b_headway_generic_log_purpose_1                       -0.023828
+b_headway_generic_log_purpose_2                       -0.001717
+b_SM_seat_first_0                                     -0.009366
+b_SM_seat_first_1                                     -0.008037
+                                                   b_TRAIN_time
+ASC_TRAIN                                             -0.078051
+ASC_SM                                                -0.050027
+b_TRAIN_time                                           0.101180
+b_SM_time                                              0.152177
+b_CAR_time                                             0.058452
+b_cost_generic_log                                     0.013692
+b_headway_generic_log_purpose_1                        0.015124
+b_headway_generic_log_purpose_2                       -0.002995
+b_SM_seat_first_0                                     -0.007674
+b_SM_seat_first_1                                    6.8518e-04
+                                                      b_SM_time
+ASC_TRAIN                                             -0.083892
+ASC_SM                                                -0.138620
+b_TRAIN_time                                           0.152177
+b_SM_time                                              0.356956
+b_CAR_time                                             0.119469
+b_cost_generic_log                                     0.018104
+b_headway_generic_log_purpose_1                        0.022435
+b_headway_generic_log_purpose_2                       -0.008966
+b_SM_seat_first_0                                      0.007206
+b_SM_seat_first_1                                      0.002311
+                                                     b_CAR_time
+ASC_TRAIN                                              0.001976
+ASC_SM                                                -0.006971
+b_TRAIN_time                                           0.058452
+b_SM_time                                              0.119469
+b_CAR_time                                             0.070406
+b_cost_generic_log                                     0.026152
+b_headway_generic_log_purpose_1                        0.002149
+b_headway_generic_log_purpose_2                     -7.2727e-04
+b_SM_seat_first_0                                     -0.001579
+b_SM_seat_first_1                                     -0.003342
+                                             b_cost_generic_log
+ASC_TRAIN                                              0.008577
+ASC_SM                                                 0.004462
+b_TRAIN_time                                           0.013692
+b_SM_time                                              0.018104
+b_CAR_time                                             0.026152
+b_cost_generic_log                                     0.121453
+b_headway_generic_log_purpose_1                        0.016979
+b_headway_generic_log_purpose_2                       -0.001377
+b_SM_seat_first_0                                      0.006829
+b_SM_seat_first_1                                      0.003369
+                                b_headway_generic_log_purpose_1
+ASC_TRAIN                                             -0.039902
+ASC_SM                                                -0.023828
+b_TRAIN_time                                           0.015124
+b_SM_time                                              0.022435
+b_CAR_time                                             0.002149
+b_cost_generic_log                                     0.016979
+b_headway_generic_log_purpose_1                        0.103676
+b_headway_generic_log_purpose_2                        0.010438
+b_SM_seat_first_0                                      0.006382
+b_SM_seat_first_1                                      0.001169
+                                b_headway_generic_log_purpose_2
+ASC_TRAIN                                             -0.011811
+ASC_SM                                                -0.001717
+b_TRAIN_time                                          -0.002995
+b_SM_time                                             -0.008966
+b_CAR_time                                          -7.2727e-04
+b_cost_generic_log                                    -0.001377
+b_headway_generic_log_purpose_1                        0.010438
+b_headway_generic_log_purpose_2                        0.050064
+b_SM_seat_first_0                                     -0.002543
+b_SM_seat_first_1                                     -0.003770
+                                              b_SM_seat_first_0
+ASC_TRAIN                                              0.009133
+ASC_SM                                                -0.009366
+b_TRAIN_time                                          -0.007674
+b_SM_time                                              0.007206
+b_CAR_time                                            -0.001579
+b_cost_generic_log                                     0.006829
+b_headway_generic_log_purpose_1                        0.006382
+b_headway_generic_log_purpose_2                       -0.002543
+b_SM_seat_first_0                                      0.040984
+b_SM_seat_first_1                                     -0.003351
+                                              b_SM_seat_first_1
+ASC_TRAIN                                             -0.008663
+ASC_SM                                                -0.008037
+b_TRAIN_time                                         6.8518e-04
+b_SM_time                                              0.002311
+b_CAR_time                                            -0.003342
+b_cost_generic_log                                     0.003369
+b_headway_generic_log_purpose_1                        0.001169
+b_headway_generic_log_purpose_2                       -0.003770
+b_SM_seat_first_0                                     -0.003351
+b_SM_seat_first_1                                      0.098369
+
+Classical correlation matrix:
+                                                      ASC_TRAIN
+ASC_TRAIN                                               1.00000
+ASC_SM                                                  0.58918
+b_TRAIN_time                                           -0.59459
+b_SM_time                                              -0.13821
+b_CAR_time                                              0.28579
+b_cost_generic_log                                     -0.02876
+b_headway_generic_log_purpose_1                        -0.46672
+b_headway_generic_log_purpose_2                        -0.46162
+b_SM_seat_first_0                                       0.07850
+b_SM_seat_first_1                                   -9.0825e-04
+                                                         ASC_SM
+ASC_TRAIN                                               0.58918
+ASC_SM                                                  1.00000
+b_TRAIN_time                                           -0.07205
+b_SM_time                                              -0.35771
+b_CAR_time                                              0.52146
+b_cost_generic_log                                     -0.11622
+b_headway_generic_log_purpose_1                        -0.25779
+b_headway_generic_log_purpose_2                        -0.25589
+b_SM_seat_first_0                                      -0.14551
+b_SM_seat_first_1                                      -0.12950
+                                                   b_TRAIN_time
+ASC_TRAIN                                              -0.59459
+ASC_SM                                                 -0.07205
+b_TRAIN_time                                            1.00000
+b_SM_time                                               0.47962
+b_CAR_time                                              0.34103
+b_cost_generic_log                                      0.07391
+b_headway_generic_log_purpose_1                         0.07329
+b_headway_generic_log_purpose_2                        -0.02977
+b_SM_seat_first_0                                      -0.07354
+b_SM_seat_first_1                                      -0.03875
+                                                      b_SM_time
+ASC_TRAIN                                             -0.138215
+ASC_SM                                                -0.357706
+b_TRAIN_time                                           0.479616
+b_SM_time                                              1.000000
+b_CAR_time                                             0.484390
+b_cost_generic_log                                     0.085445
+b_headway_generic_log_purpose_1                       -0.005574
+b_headway_generic_log_purpose_2                       -0.005528
+b_SM_seat_first_0                                      0.041410
+b_SM_seat_first_1                                      0.014731
+                                                     b_CAR_time
+ASC_TRAIN                                               0.28579
+ASC_SM                                                  0.52146
+b_TRAIN_time                                            0.34103
+b_SM_time                                               0.48439
+b_CAR_time                                              1.00000
+b_cost_generic_log                                      0.13117
+b_headway_generic_log_purpose_1                        -0.05038
+b_headway_generic_log_purpose_2                         0.03795
+b_SM_seat_first_0                                      -0.04356
+b_SM_seat_first_1                                      -0.07145
+                                             b_cost_generic_log
+ASC_TRAIN                                             -0.028756
+ASC_SM                                                -0.116223
+b_TRAIN_time                                           0.073907
+b_SM_time                                              0.085445
+b_CAR_time                                             0.131171
+b_cost_generic_log                                     1.000000
+b_headway_generic_log_purpose_1                        0.030403
+b_headway_generic_log_purpose_2                       -0.003506
+b_SM_seat_first_0                                      0.098961
+b_SM_seat_first_1                                     -0.005776
+                                b_headway_generic_log_purpose_1
+ASC_TRAIN                                             -0.466717
+ASC_SM                                                -0.257786
+b_TRAIN_time                                           0.073288
+b_SM_time                                             -0.005574
+b_CAR_time                                            -0.050381
+b_cost_generic_log                                     0.030403
+b_headway_generic_log_purpose_1                        1.000000
+b_headway_generic_log_purpose_2                        0.514144
+b_SM_seat_first_0                                   -5.4450e-04
+b_SM_seat_first_1                                     -0.006742
+                                b_headway_generic_log_purpose_2
+ASC_TRAIN                                             -0.461618
+ASC_SM                                                -0.255888
+b_TRAIN_time                                          -0.029766
+b_SM_time                                             -0.005528
+b_CAR_time                                             0.037948
+b_cost_generic_log                                    -0.003506
+b_headway_generic_log_purpose_1                        0.514144
+b_headway_generic_log_purpose_2                        1.000000
+b_SM_seat_first_0                                     -0.009467
+b_SM_seat_first_1                                    4.2304e-04
+                                              b_SM_seat_first_0
+ASC_TRAIN                                              0.078500
+ASC_SM                                                -0.145509
+b_TRAIN_time                                          -0.073544
+b_SM_time                                              0.041410
+b_CAR_time                                            -0.043556
+b_cost_generic_log                                     0.098961
+b_headway_generic_log_purpose_1                     -5.4450e-04
+b_headway_generic_log_purpose_2                       -0.009467
+b_SM_seat_first_0                                      1.000000
+b_SM_seat_first_1                                      0.070922
+                                              b_SM_seat_first_1
+ASC_TRAIN                                           -9.0825e-04
+ASC_SM                                                -0.129501
+b_TRAIN_time                                          -0.038748
+b_SM_time                                              0.014731
+b_CAR_time                                            -0.071453
+b_cost_generic_log                                    -0.005776
+b_headway_generic_log_purpose_1                       -0.006742
+b_headway_generic_log_purpose_2                      4.2304e-04
+b_SM_seat_first_0                                      0.070922
+b_SM_seat_first_1                                      1.000000
+
+Robust correlation matrix:
+                                                      ASC_TRAIN
+ASC_TRAIN                                               1.00000
+ASC_SM                                                  0.63761
+b_TRAIN_time                                           -0.65989
+b_SM_time                                              -0.37762
+b_CAR_time                                              0.02003
+b_cost_generic_log                                      0.06619
+b_headway_generic_log_purpose_1                        -0.33327
+b_headway_generic_log_purpose_2                        -0.14196
+b_SM_seat_first_0                                       0.12132
+b_SM_seat_first_1                                      -0.07428
+                                                         ASC_SM
+ASC_TRAIN                                               0.63761
+ASC_SM                                                  1.00000
+b_TRAIN_time                                           -0.46758
+b_SM_time                                              -0.68978
+b_CAR_time                                             -0.07811
+b_cost_generic_log                                      0.03806
+b_headway_generic_log_purpose_1                        -0.22001
+b_headway_generic_log_purpose_2                        -0.02281
+b_SM_seat_first_0                                      -0.13754
+b_SM_seat_first_1                                      -0.07618
+                                                   b_TRAIN_time
+ASC_TRAIN                                             -0.659890
+ASC_SM                                                -0.467576
+b_TRAIN_time                                           1.000000
+b_SM_time                                              0.800747
+b_CAR_time                                             0.692540
+b_cost_generic_log                                     0.123514
+b_headway_generic_log_purpose_1                        0.147666
+b_headway_generic_log_purpose_2                       -0.042084
+b_SM_seat_first_0                                     -0.119178
+b_SM_seat_first_1                                      0.006868
+                                                      b_SM_time
+ASC_TRAIN                                              -0.37762
+ASC_SM                                                 -0.68978
+b_TRAIN_time                                            0.80075
+b_SM_time                                               1.00000
+b_CAR_time                                              0.75360
+b_cost_generic_log                                      0.08695
+b_headway_generic_log_purpose_1                         0.11662
+b_headway_generic_log_purpose_2                        -0.06707
+b_SM_seat_first_0                                       0.05958
+b_SM_seat_first_1                                       0.01233
+                                                     b_CAR_time
+ASC_TRAIN                                               0.02003
+ASC_SM                                                 -0.07811
+b_TRAIN_time                                            0.69254
+b_SM_time                                               0.75360
+b_CAR_time                                              1.00000
+b_cost_generic_log                                      0.28281
+b_headway_generic_log_purpose_1                         0.02515
+b_headway_generic_log_purpose_2                        -0.01225
+b_SM_seat_first_0                                      -0.02940
+b_SM_seat_first_1                                      -0.04015
+                                             b_cost_generic_log
+ASC_TRAIN                                               0.06619
+ASC_SM                                                  0.03806
+b_TRAIN_time                                            0.12351
+b_SM_time                                               0.08695
+b_CAR_time                                              0.28281
+b_cost_generic_log                                      1.00000
+b_headway_generic_log_purpose_1                         0.15131
+b_headway_generic_log_purpose_2                        -0.01766
+b_SM_seat_first_0                                       0.09679
+b_SM_seat_first_1                                       0.03082
+                                b_headway_generic_log_purpose_1
+ASC_TRAIN                                              -0.33327
+ASC_SM                                                 -0.22001
+b_TRAIN_time                                            0.14767
+b_SM_time                                               0.11662
+b_CAR_time                                              0.02515
+b_cost_generic_log                                      0.15131
+b_headway_generic_log_purpose_1                         1.00000
+b_headway_generic_log_purpose_2                         0.14488
+b_SM_seat_first_0                                       0.09790
+b_SM_seat_first_1                                       0.01158
+                                b_headway_generic_log_purpose_2
+ASC_TRAIN                                              -0.14196
+ASC_SM                                                 -0.02281
+b_TRAIN_time                                           -0.04208
+b_SM_time                                              -0.06707
+b_CAR_time                                             -0.01225
+b_cost_generic_log                                     -0.01766
+b_headway_generic_log_purpose_1                         0.14488
+b_headway_generic_log_purpose_2                         1.00000
+b_SM_seat_first_0                                      -0.05614
+b_SM_seat_first_1                                      -0.05372
+                                              b_SM_seat_first_0
+ASC_TRAIN                                               0.12132
+ASC_SM                                                 -0.13754
+b_TRAIN_time                                           -0.11918
+b_SM_time                                               0.05958
+b_CAR_time                                             -0.02940
+b_cost_generic_log                                      0.09679
+b_headway_generic_log_purpose_1                         0.09790
+b_headway_generic_log_purpose_2                        -0.05614
+b_SM_seat_first_0                                       1.00000
+b_SM_seat_first_1                                      -0.05277
+                                              b_SM_seat_first_1
+ASC_TRAIN                                             -0.074282
+ASC_SM                                                -0.076179
+b_TRAIN_time                                           0.006868
+b_SM_time                                              0.012332
+b_CAR_time                                            -0.040153
+b_cost_generic_log                                     0.030825
+b_headway_generic_log_purpose_1                        0.011580
+b_headway_generic_log_purpose_2                       -0.053721
+b_SM_seat_first_0                                     -0.052769
+b_SM_seat_first_1                                      1.000000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 476         0.003330033
+  19         0.014834478
+ 322         0.050896490
+ 576         0.055387446
+ 315         0.061772273
+ 394         0.063464735
+ 104         0.075511115
+ 241         0.087583894
+ 309         0.099891982
+ 385         0.109576782
+ 288         0.118582395
+ 290         0.123838491
+ 368         0.134882602
+ 356         0.136122798
+ 378         0.136737745
+ 370         0.148619174
+ 298         0.149704010
+ 796         0.150482996
+ 386         0.151255654
+ 360         0.155827815
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                                                                             
+modelName              "1110_2120_3210_4214_5000_6126_7000"                                                              
+modelDescr             "MNL proposed by Delphos"                                                                         
+indivID                "id"                                                                                              
+outputDirectory        "/Users/gnova/Developer/Main-Delphos/Delphos/src/delphos/data/bundled/datasets/dataset_4/outputs/"
+debug                  "FALSE"                                                                                           
+nCores                 "1"                                                                                               
+workInLogs             "FALSE"                                                                                           
+seed                   "13"                                                                                              
+mixing                 "FALSE"                                                                                           
+HB                     "FALSE"                                                                                           
+noValidation           "FALSE"                                                                                           
+noDiagnostics          "FALSE"                                                                                           
+calculateLLC           "TRUE"                                                                                            
+analyticHessian        "FALSE"                                                                                           
+dropLoopExpansion      "FALSE"                                                                                           
+dropRedefCheck         "FALSE"                                                                                           
+memorySaver            "FALSE"                                                                                           
+panelData              "TRUE"                                                                                            
+analyticGrad           "TRUE"                                                                                            
+analyticGrad_manualSet "FALSE"                                                                                           
+overridePanel          "FALSE"                                                                                           
+preventOverridePanel   "FALSE"                                                                                           
+noModification         "FALSE"                                                                                           
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+
+apollo_probabilities
+----------------------
+function (apollo_beta, apollo_inputs, functionality = "estimate") 
+{
+    apollo_attach(apollo_beta, apollo_inputs)
+    on.exit(apollo_detach(apollo_beta, apollo_inputs))
+    P = list()
+    V = list()
+    V <- list()
+    V[["TRAIN"]] <- ASC_TRAIN + b_TRAIN_time * train_tt_scaled + 
+        b_cost_generic_log * log(1 + train_cost_scaled) + b_headway_generic_log_purpose_1 * 
+        (purpose == 1) * log(1 + train_he_scaled) + b_headway_generic_log_purpose_2 * 
+        (purpose == 2) * log(1 + train_he_scaled)
+    V[["SM"]] <- ASC_SM + b_SM_time * sm_tt_scaled + b_cost_generic_log * 
+        log(1 + sm_cost_scaled) + b_headway_generic_log_purpose_1 * 
+        (purpose == 1) * log(1 + sm_he_scaled) + b_headway_generic_log_purpose_2 * 
+        (purpose == 2) * log(1 + sm_he_scaled) + b_SM_seat_first_0 * 
+        (first == 0) * sm_seats_scaled + b_SM_seat_first_1 * 
+        (first == 1) * sm_seats_scaled
+    V[["CAR"]] <- ASC_CAR + b_CAR_time * car_tt_scaled + b_cost_generic_log * 
+        log(1 + car_co_scaled)
+    mnl_settings = list(alternatives = c(TRAIN = 1, SM = 2, CAR = 3), 
+        avail = list(TRAIN = train_av, SM = sm_av, CAR = car_av), 
+        choiceVar = choice, utilities = V)
+    P[["model"]] = apollo_mnl(mnl_settings, functionality)
+    P = apollo_panelProd(P, apollo_inputs, functionality)
+    P = apollo_prepareProb(P, apollo_inputs, functionality)
+    return(P)
+}

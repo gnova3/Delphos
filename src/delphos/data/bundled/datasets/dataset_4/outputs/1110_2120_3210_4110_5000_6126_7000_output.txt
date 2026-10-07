@@ -1,0 +1,286 @@
+Model run by gnova using Apollo 0.3.7 on R 4.5.1 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : 1110_2120_3210_4110_5000_6126_7000
+Model description                           : MNL proposed by Delphos
+Model run at                                : 2026-09-17 09:16:00.185349
+Estimation method                           : bgw
+Estimation diagnosis                        : Relative function convergence (favorable)
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -29.896906
+     reciprocal of condition number         : 0.00863494
+Number of individuals                       : 601
+Number of rows in database                  : 5409
+Number of modelled outcomes                 : 5409
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -5548.28
+LL at equal shares, LL(0)                   : -5548.28
+LL at observed shares, LL(C)                : -4702.95
+LL(final)                                   : -4232.89
+Rho-squared vs equal shares                  :  0.2371 
+Adj.Rho-squared vs equal shares              :  0.2355 
+Rho-squared vs observed shares               :  0.1 
+Adj.Rho-squared vs observed shares           :  0.0985 
+AIC                                         :  8483.78 
+BIC                                         :  8543.14 
+
+Estimated parameters                        : 9
+Time taken (hh:mm:ss)                       :  00:00:0.57 
+     pre-estimation                         :  00:00:0.11 
+     estimation                             :  00:00:0.2 
+     post-estimation                        :  00:00:0.26 
+Iterations                                  :  17  
+
+Unconstrained optimisation.
+
+Estimates:
+                      Estimate        s.e.   t.rat.(0)    Rob.s.e.
+ASC_TRAIN               0.2673     0.15092       1.771      0.3633
+ASC_SM                  0.4450     0.10235       4.348      0.3328
+ASC_CAR                 0.0000          NA          NA          NA
+b_TRAIN_time           -1.3707     0.08483     -16.159      0.3157
+b_SM_time              -1.0226     0.09581     -10.673      0.5964
+b_CAR_time             -0.9822     0.06928     -14.176      0.2657
+b_cost_generic_log     -2.7148     0.13375     -20.297      0.3468
+b_headway_generic      -0.5865     0.10855      -5.403      0.1232
+b_SM_seat_first_0      -0.6242     0.11312      -5.518      0.2017
+b_SM_seat_first_1       0.2598     0.16455       1.579      0.3133
+                   Rob.t.rat.(0)
+ASC_TRAIN                 0.7359
+ASC_SM                    1.3371
+ASC_CAR                       NA
+b_TRAIN_time             -4.3416
+b_SM_time                -1.7147
+b_CAR_time               -3.6966
+b_cost_generic_log       -7.8272
+b_headway_generic        -4.7627
+b_SM_seat_first_0        -3.0944
+b_SM_seat_first_1         0.8292
+
+
+Overview of choices for MNL model component :
+                                   TRAIN      SM     CAR
+Times available                  5409.00 5409.00 4437.00
+Times chosen                      740.00 3234.00 1435.00
+Percentage chosen overall          13.68   59.79   26.53
+Percentage chosen when available   13.68   59.79   32.34
+
+
+
+Classical covariance matrix:
+                            ASC_TRAIN             ASC_SM       b_TRAIN_time
+ASC_TRAIN                    0.022777           0.008594          -0.007883
+ASC_SM                       0.008594           0.010475        -5.8019e-04
+b_TRAIN_time                -0.007883        -5.8019e-04           0.007196
+b_SM_time                   -0.002109          -0.003598           0.003924
+b_CAR_time                   0.003072           0.003785           0.002081
+b_cost_generic_log        -4.8650e-04          -0.001593         7.9894e-04
+b_headway_generic           -0.007443          -0.002185          1.686e-05
+b_SM_seat_first_0            0.001414          -0.001732        -7.1411e-04
+b_SM_seat_first_1          -2.999e-05          -0.002245        -5.4195e-04
+                            b_SM_time         b_CAR_time b_cost_generic_log
+ASC_TRAIN                   -0.002109           0.003072        -4.8650e-04
+ASC_SM                      -0.003598           0.003785          -0.001593
+b_TRAIN_time                 0.003924           0.002081         7.9894e-04
+b_SM_time                    0.009179           0.003227           0.001098
+b_CAR_time                   0.003227           0.004800           0.001244
+b_cost_generic_log           0.001098           0.001244           0.017889
+b_headway_generic          -7.877e-05          6.840e-05          6.510e-05
+b_SM_seat_first_0          4.4565e-04        -3.4241e-04           0.001486
+b_SM_seat_first_1          2.2624e-04        -8.2857e-04        -1.2128e-04
+                    b_headway_generic  b_SM_seat_first_0  b_SM_seat_first_1
+ASC_TRAIN                   -0.007443           0.001414         -2.999e-05
+ASC_SM                      -0.002185          -0.001732          -0.002245
+b_TRAIN_time                1.686e-05        -7.1411e-04        -5.4195e-04
+b_SM_time                  -7.877e-05         4.4565e-04         2.2624e-04
+b_CAR_time                  6.840e-05        -3.4241e-04        -8.2857e-04
+b_cost_generic_log          6.510e-05           0.001486        -1.2128e-04
+b_headway_generic            0.011784        -1.0021e-04         -4.127e-05
+b_SM_seat_first_0         -1.0021e-04           0.012797           0.001327
+b_SM_seat_first_1          -4.127e-05           0.001327           0.027078
+
+Robust covariance matrix:
+                            ASC_TRAIN             ASC_SM       b_TRAIN_time
+ASC_TRAIN                    0.131973           0.075701          -0.075460
+ASC_SM                       0.075701           0.110744          -0.048371
+b_TRAIN_time                -0.075460          -0.048371           0.099677
+b_SM_time                   -0.080520          -0.136819           0.150408
+b_CAR_time                   0.002041          -0.007175           0.058559
+b_cost_generic_log           0.010809           0.005505           0.012646
+b_headway_generic           -0.010749          -0.003396           0.001064
+b_SM_seat_first_0            0.010395          -0.008812          -0.008081
+b_SM_seat_first_1           -0.007919          -0.007931         4.1318e-04
+                            b_SM_time         b_CAR_time b_cost_generic_log
+ASC_TRAIN                   -0.080520           0.002041           0.010809
+ASC_SM                      -0.136819          -0.007175           0.005505
+b_TRAIN_time                 0.150408           0.058559           0.012646
+b_SM_time                    0.355649           0.120082           0.017456
+b_CAR_time                   0.120082           0.070593           0.026390
+b_cost_generic_log           0.017456           0.026390           0.120300
+b_headway_generic           -0.001295        -5.2547e-04           0.001798
+b_SM_seat_first_0            0.006993          -0.001354           0.006465
+b_SM_seat_first_1            0.002272          -0.003270           0.003326
+                    b_headway_generic  b_SM_seat_first_0  b_SM_seat_first_1
+ASC_TRAIN                   -0.010749           0.010395          -0.007919
+ASC_SM                      -0.003396          -0.008812          -0.007931
+b_TRAIN_time                 0.001064          -0.008081         4.1318e-04
+b_SM_time                   -0.001295           0.006993           0.002272
+b_CAR_time                -5.2547e-04          -0.001354          -0.003270
+b_cost_generic_log           0.001798           0.006465           0.003326
+b_headway_generic            0.015166        -8.8549e-04          -0.002385
+b_SM_seat_first_0         -8.8549e-04           0.040695          -0.003307
+b_SM_seat_first_1           -0.002385          -0.003307           0.098172
+
+Classical correlation matrix:
+                            ASC_TRAIN             ASC_SM       b_TRAIN_time
+ASC_TRAIN                    1.000000            0.55639          -0.615748
+ASC_SM                       0.556391            1.00000          -0.066826
+b_TRAIN_time                -0.615748           -0.06683           1.000000
+b_SM_time                   -0.145870           -0.36691           0.482851
+b_CAR_time                   0.293799            0.53375           0.354056
+b_cost_generic_log          -0.024101           -0.11639           0.070417
+b_headway_generic           -0.454330           -0.19669           0.001831
+b_SM_seat_first_0            0.082803           -0.14959          -0.074418
+b_SM_seat_first_1           -0.001208           -0.13329          -0.038825
+                            b_SM_time         b_CAR_time b_cost_generic_log
+ASC_TRAIN                   -0.145870           0.293799          -0.024101
+ASC_SM                      -0.366912           0.533754          -0.116394
+b_TRAIN_time                 0.482851           0.354056           0.070417
+b_SM_time                    1.000000           0.486109           0.085650
+b_CAR_time                   0.486109           1.000000           0.134276
+b_cost_generic_log           0.085650           0.134276           1.000000
+b_headway_generic           -0.007574           0.009094           0.004484
+b_SM_seat_first_0            0.041120          -0.043689           0.098198
+b_SM_seat_first_1            0.014351          -0.072676          -0.005510
+                    b_headway_generic  b_SM_seat_first_0  b_SM_seat_first_1
+ASC_TRAIN                   -0.454330           0.082803          -0.001208
+ASC_SM                      -0.196692          -0.149589          -0.133293
+b_TRAIN_time                 0.001831          -0.074418          -0.038825
+b_SM_time                   -0.007574           0.041120           0.014351
+b_CAR_time                   0.009094          -0.043689          -0.072676
+b_cost_generic_log           0.004484           0.098198          -0.005510
+b_headway_generic            1.000000          -0.008161          -0.002310
+b_SM_seat_first_0           -0.008161           1.000000           0.071301
+b_SM_seat_first_1           -0.002310           0.071301           1.000000
+
+Robust correlation matrix:
+                            ASC_TRAIN             ASC_SM       b_TRAIN_time
+ASC_TRAIN                     1.00000            0.62618          -0.657927
+ASC_SM                        0.62618            1.00000          -0.460390
+b_TRAIN_time                 -0.65793           -0.46039           1.000000
+b_SM_time                    -0.37166           -0.68941           0.798845
+b_CAR_time                    0.02115           -0.08114           0.698100
+b_cost_generic_log            0.08578            0.04769           0.115488
+b_headway_generic            -0.24026           -0.08287           0.027354
+b_SM_seat_first_0             0.14184           -0.13127          -0.126887
+b_SM_seat_first_1            -0.06957           -0.07606           0.004177
+                            b_SM_time         b_CAR_time b_cost_generic_log
+ASC_TRAIN                    -0.37166            0.02115            0.08578
+ASC_SM                       -0.68941           -0.08114            0.04769
+b_TRAIN_time                  0.79884            0.69810            0.11549
+b_SM_time                     1.00000            0.75785            0.08439
+b_CAR_time                    0.75785            1.00000            0.28637
+b_cost_generic_log            0.08439            0.28637            1.00000
+b_headway_generic            -0.01763           -0.01606            0.04210
+b_SM_seat_first_0             0.05813           -0.02527            0.09240
+b_SM_seat_first_1             0.01216           -0.03928            0.03061
+                    b_headway_generic  b_SM_seat_first_0  b_SM_seat_first_1
+ASC_TRAIN                    -0.24026            0.14184          -0.069575
+ASC_SM                       -0.08287           -0.13127          -0.076062
+b_TRAIN_time                  0.02735           -0.12689           0.004177
+b_SM_time                    -0.01763            0.05813           0.012160
+b_CAR_time                   -0.01606           -0.02527          -0.039281
+b_cost_generic_log            0.04210            0.09240           0.030610
+b_headway_generic             1.00000           -0.03564          -0.061811
+b_SM_seat_first_0            -0.03564            1.00000          -0.052326
+b_SM_seat_first_1            -0.06181           -0.05233           1.000000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 476          0.00346034
+  19          0.01447337
+ 322          0.05090100
+ 576          0.05559680
+ 315          0.06157733
+ 394          0.06300394
+ 104          0.07705147
+ 241          0.08565438
+ 309          0.09756161
+ 385          0.10854045
+ 288          0.11504198
+ 290          0.12371504
+ 356          0.13434862
+ 368          0.13456976
+ 378          0.13603305
+ 370          0.14748860
+ 386          0.15049464
+ 796          0.15067974
+ 298          0.15193415
+ 375          0.15385457
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                                                                             
+modelName              "1110_2120_3210_4110_5000_6126_7000"                                                              
+modelDescr             "MNL proposed by Delphos"                                                                         
+indivID                "id"                                                                                              
+outputDirectory        "/Users/gnova/Developer/Main-Delphos/Delphos/src/delphos/data/bundled/datasets/dataset_4/outputs/"
+debug                  "FALSE"                                                                                           
+nCores                 "1"                                                                                               
+workInLogs             "FALSE"                                                                                           
+seed                   "13"                                                                                              
+mixing                 "FALSE"                                                                                           
+HB                     "FALSE"                                                                                           
+noValidation           "FALSE"                                                                                           
+noDiagnostics          "FALSE"                                                                                           
+calculateLLC           "TRUE"                                                                                            
+analyticHessian        "FALSE"                                                                                           
+dropLoopExpansion      "FALSE"                                                                                           
+dropRedefCheck         "FALSE"                                                                                           
+memorySaver            "FALSE"                                                                                           
+panelData              "TRUE"                                                                                            
+analyticGrad           "TRUE"                                                                                            
+analyticGrad_manualSet "FALSE"                                                                                           
+overridePanel          "FALSE"                                                                                           
+preventOverridePanel   "FALSE"                                                                                           
+noModification         "FALSE"                                                                                           
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+
+apollo_probabilities
+----------------------
+function (apollo_beta, apollo_inputs, functionality = "estimate") 
+{
+    apollo_attach(apollo_beta, apollo_inputs)
+    on.exit(apollo_detach(apollo_beta, apollo_inputs))
+    P = list()
+    V = list()
+    V <- list()
+    V[["TRAIN"]] <- ASC_TRAIN + b_TRAIN_time * train_tt_scaled + 
+        b_cost_generic_log * log(1 + train_cost_scaled) + b_headway_generic * 
+        train_he_scaled
+    V[["SM"]] <- ASC_SM + b_SM_time * sm_tt_scaled + b_cost_generic_log * 
+        log(1 + sm_cost_scaled) + b_headway_generic * sm_he_scaled + 
+        b_SM_seat_first_0 * (first == 0) * sm_seats_scaled + 
+        b_SM_seat_first_1 * (first == 1) * sm_seats_scaled
+    V[["CAR"]] <- ASC_CAR + b_CAR_time * car_tt_scaled + b_cost_generic_log * 
+        log(1 + car_co_scaled)
+    mnl_settings = list(alternatives = c(TRAIN = 1, SM = 2, CAR = 3), 
+        avail = list(TRAIN = train_av, SM = sm_av, CAR = car_av), 
+        choiceVar = choice, utilities = V)
+    P[["model"]] = apollo_mnl(mnl_settings, functionality)
+    P = apollo_panelProd(P, apollo_inputs, functionality)
+    P = apollo_prepareProb(P, apollo_inputs, functionality)
+    return(P)
+}

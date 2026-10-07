@@ -1,0 +1,622 @@
+Model run by gnova using Apollo 0.3.7 on R 4.5.1 for Darwin.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : 1110_2212_3211_4110_5000_6110_7000
+Model description                           : MNL proposed by Delphos
+Model run at                                : 2026-09-17 09:15:21.540134
+Estimation method                           : bgw
+Estimation diagnosis                        : Relative function convergence (favorable)
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -8.224912
+     reciprocal of condition number         : 0.00570647
+Number of individuals                       : 601
+Number of rows in database                  : 5409
+Number of modelled outcomes                 : 5409
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -5548.28
+LL at equal shares, LL(0)                   : -5548.28
+LL at observed shares, LL(C)                : -4702.95
+LL(final)                                   : -4104.02
+Rho-squared vs equal shares                  :  0.2603 
+Adj.Rho-squared vs equal shares              :  0.2585 
+Rho-squared vs observed shares               :  0.1274 
+Adj.Rho-squared vs observed shares           :  0.1257 
+AIC                                         :  8228.04 
+BIC                                         :  8294 
+
+Estimated parameters                        : 10
+Time taken (hh:mm:ss)                       :  00:00:0.72 
+     pre-estimation                         :  00:00:0.19 
+     estimation                             :  00:00:0.19 
+     post-estimation                        :  00:00:0.34 
+Iterations                                  :  10  
+
+Unconstrained optimisation.
+
+Estimates:
+                               Estimate        s.e.   t.rat.(0)    Rob.s.e.
+ASC_TRAIN                       -0.2364     0.08764      -2.697      0.1295
+ASC_SM                           0.1565     0.05836       2.681      0.1277
+ASC_CAR                          0.0000          NA          NA          NA
+b_time_generic_log_income_1     -1.5501     0.24773      -6.257      0.6007
+b_time_generic_log_income_2     -2.7863     0.20255     -13.756      0.5808
+b_time_generic_log_income_3     -4.5419     0.19952     -22.764      0.4664
+b_time_generic_log_income_4     -1.3060     0.30852      -4.233      0.7002
+b_cost_generic_log_male_0       -1.7623     0.28738      -6.132      0.7670
+b_cost_generic_log_male_1       -3.1655     0.15493     -20.431      0.4052
+b_headway_generic               -0.6077     0.10884      -5.584      0.1209
+b_seat_generic                  -0.2502     0.09597      -2.607      0.1582
+                            Rob.t.rat.(0)
+ASC_TRAIN                          -1.826
+ASC_SM                              1.225
+ASC_CAR                                NA
+b_time_generic_log_income_1        -2.580
+b_time_generic_log_income_2        -4.797
+b_time_generic_log_income_3        -9.737
+b_time_generic_log_income_4        -1.865
+b_cost_generic_log_male_0          -2.298
+b_cost_generic_log_male_1          -7.812
+b_headway_generic                  -5.027
+b_seat_generic                     -1.581
+
+
+Overview of choices for MNL model component :
+                                   TRAIN      SM     CAR
+Times available                  5409.00 5409.00 4437.00
+Times chosen                      740.00 3234.00 1435.00
+Percentage chosen overall          13.68   59.79   26.53
+Percentage chosen when available   13.68   59.79   32.34
+
+
+
+Classical covariance matrix:
+                                              ASC_TRAIN
+ASC_TRAIN                                      0.007681
+ASC_SM                                         0.001989
+b_time_generic_log_income_1                   -0.003596
+b_time_generic_log_income_2                   -0.002818
+b_time_generic_log_income_3                   -0.002414
+b_time_generic_log_income_4                   -0.002903
+b_cost_generic_log_male_0                    2.1831e-04
+b_cost_generic_log_male_1                     -0.001551
+b_headway_generic                             -0.007533
+b_seat_generic                               6.3304e-04
+                                                 ASC_SM
+ASC_TRAIN                                      0.001989
+ASC_SM                                         0.003406
+b_time_generic_log_income_1                    0.005346
+b_time_generic_log_income_2                    0.005318
+b_time_generic_log_income_3                    0.005714
+b_time_generic_log_income_4                    0.005411
+b_cost_generic_log_male_0                     -0.001320
+b_cost_generic_log_male_1                     -0.001735
+b_headway_generic                             -0.002365
+b_seat_generic                                -0.001134
+                            b_time_generic_log_income_1
+ASC_TRAIN                                     -0.003596
+ASC_SM                                         0.005346
+b_time_generic_log_income_1                    0.061368
+b_time_generic_log_income_2                    0.017746
+b_time_generic_log_income_3                    0.017815
+b_time_generic_log_income_4                    0.018808
+b_cost_generic_log_male_0                      0.001774
+b_cost_generic_log_male_1                      0.002561
+b_headway_generic                           -4.4149e-04
+b_seat_generic                               8.3034e-04
+                            b_time_generic_log_income_2
+ASC_TRAIN                                     -0.002818
+ASC_SM                                         0.005318
+b_time_generic_log_income_1                    0.017746
+b_time_generic_log_income_2                    0.041025
+b_time_generic_log_income_3                    0.017028
+b_time_generic_log_income_4                    0.016516
+b_cost_generic_log_male_0                     -0.001093
+b_cost_generic_log_male_1                      0.003449
+b_headway_generic                             8.487e-05
+b_seat_generic                              -5.6782e-04
+                            b_time_generic_log_income_3
+ASC_TRAIN                                     -0.002414
+ASC_SM                                         0.005714
+b_time_generic_log_income_1                    0.017815
+b_time_generic_log_income_2                    0.017028
+b_time_generic_log_income_3                    0.039809
+b_time_generic_log_income_4                    0.016468
+b_cost_generic_log_male_0                     -0.001774
+b_cost_generic_log_male_1                      0.007269
+b_headway_generic                            1.7560e-04
+b_seat_generic                                -0.001730
+                            b_time_generic_log_income_4
+ASC_TRAIN                                     -0.002903
+ASC_SM                                         0.005411
+b_time_generic_log_income_1                    0.018808
+b_time_generic_log_income_2                    0.016516
+b_time_generic_log_income_3                    0.016468
+b_time_generic_log_income_4                    0.095185
+b_cost_generic_log_male_0                      0.001813
+b_cost_generic_log_male_1                    6.9693e-04
+b_headway_generic                           -3.6077e-04
+b_seat_generic                               5.8994e-04
+                              b_cost_generic_log_male_0
+ASC_TRAIN                                    2.1831e-04
+ASC_SM                                        -0.001320
+b_time_generic_log_income_1                    0.001774
+b_time_generic_log_income_2                   -0.001093
+b_time_generic_log_income_3                   -0.001774
+b_time_generic_log_income_4                    0.001813
+b_cost_generic_log_male_0                      0.082588
+b_cost_generic_log_male_1                      0.001735
+b_headway_generic                             3.180e-06
+b_seat_generic                              -7.8996e-04
+                              b_cost_generic_log_male_1
+ASC_TRAIN                                     -0.001551
+ASC_SM                                        -0.001735
+b_time_generic_log_income_1                    0.002561
+b_time_generic_log_income_2                    0.003449
+b_time_generic_log_income_3                    0.007269
+b_time_generic_log_income_4                  6.9693e-04
+b_cost_generic_log_male_0                      0.001735
+b_cost_generic_log_male_1                      0.024004
+b_headway_generic                            1.2179e-04
+b_seat_generic                                 0.001395
+                                      b_headway_generic
+ASC_TRAIN                                     -0.007533
+ASC_SM                                        -0.002365
+b_time_generic_log_income_1                 -4.4149e-04
+b_time_generic_log_income_2                   8.487e-05
+b_time_generic_log_income_3                  1.7560e-04
+b_time_generic_log_income_4                 -3.6077e-04
+b_cost_generic_log_male_0                     3.180e-06
+b_cost_generic_log_male_1                    1.2179e-04
+b_headway_generic                              0.011846
+b_seat_generic                               -7.180e-05
+                                         b_seat_generic
+ASC_TRAIN                                    6.3304e-04
+ASC_SM                                        -0.001134
+b_time_generic_log_income_1                  8.3034e-04
+b_time_generic_log_income_2                 -5.6782e-04
+b_time_generic_log_income_3                   -0.001730
+b_time_generic_log_income_4                  5.8994e-04
+b_cost_generic_log_male_0                   -7.8996e-04
+b_cost_generic_log_male_1                      0.001395
+b_headway_generic                            -7.180e-05
+b_seat_generic                                 0.009210
+
+Robust covariance matrix:
+                                              ASC_TRAIN
+ASC_TRAIN                                      0.016758
+ASC_SM                                         0.002701
+b_time_generic_log_income_1                   -0.022773
+b_time_generic_log_income_2                   -0.019126
+b_time_generic_log_income_3                   -0.018887
+b_time_generic_log_income_4                   -0.007495
+b_cost_generic_log_male_0                   -8.4856e-04
+b_cost_generic_log_male_1                     -0.011309
+b_headway_generic                             -0.008620
+b_seat_generic                               5.1564e-04
+                                                 ASC_SM
+ASC_TRAIN                                      0.002701
+ASC_SM                                         0.016316
+b_time_generic_log_income_1                    0.034877
+b_time_generic_log_income_2                    0.045999
+b_time_generic_log_income_3                    0.032357
+b_time_generic_log_income_4                    0.030379
+b_cost_generic_log_male_0                     -0.019378
+b_cost_generic_log_male_1                     -0.007559
+b_headway_generic                             -0.003282
+b_seat_generic                                -0.002972
+                            b_time_generic_log_income_1
+ASC_TRAIN                                     -0.022773
+ASC_SM                                         0.034877
+b_time_generic_log_income_1                    0.360896
+b_time_generic_log_income_2                    0.147604
+b_time_generic_log_income_3                    0.125824
+b_time_generic_log_income_4                    0.093352
+b_cost_generic_log_male_0                     -0.020253
+b_cost_generic_log_male_1                      0.032655
+b_headway_generic                              0.004900
+b_seat_generic                                 0.001208
+                            b_time_generic_log_income_2
+ASC_TRAIN                                     -0.019126
+ASC_SM                                         0.045999
+b_time_generic_log_income_1                    0.147604
+b_time_generic_log_income_2                    0.337349
+b_time_generic_log_income_3                    0.153063
+b_time_generic_log_income_4                    0.115789
+b_cost_generic_log_male_0                     -0.028355
+b_cost_generic_log_male_1                      0.047689
+b_headway_generic                              0.002630
+b_seat_generic                                -0.010814
+                            b_time_generic_log_income_3
+ASC_TRAIN                                     -0.018887
+ASC_SM                                         0.032357
+b_time_generic_log_income_1                    0.125824
+b_time_generic_log_income_2                    0.153063
+b_time_generic_log_income_3                    0.217571
+b_time_generic_log_income_4                    0.093165
+b_cost_generic_log_male_0                     -0.033816
+b_cost_generic_log_male_1                      0.071180
+b_headway_generic                           -7.8081e-04
+b_seat_generic                                -0.003404
+                            b_time_generic_log_income_4
+ASC_TRAIN                                     -0.007495
+ASC_SM                                         0.030379
+b_time_generic_log_income_1                    0.093352
+b_time_generic_log_income_2                    0.115789
+b_time_generic_log_income_3                    0.093165
+b_time_generic_log_income_4                    0.490244
+b_cost_generic_log_male_0                     -0.033350
+b_cost_generic_log_male_1                      0.018614
+b_headway_generic                             -0.002104
+b_seat_generic                                 0.003389
+                              b_cost_generic_log_male_0
+ASC_TRAIN                                   -8.4856e-04
+ASC_SM                                        -0.019378
+b_time_generic_log_income_1                   -0.020253
+b_time_generic_log_income_2                   -0.028355
+b_time_generic_log_income_3                   -0.033816
+b_time_generic_log_income_4                   -0.033350
+b_cost_generic_log_male_0                      0.588233
+b_cost_generic_log_male_1                      0.018446
+b_headway_generic                            -9.568e-06
+b_seat_generic                                -0.003042
+                              b_cost_generic_log_male_1
+ASC_TRAIN                                     -0.011309
+ASC_SM                                        -0.007559
+b_time_generic_log_income_1                    0.032655
+b_time_generic_log_income_2                    0.047689
+b_time_generic_log_income_3                    0.071180
+b_time_generic_log_income_4                    0.018614
+b_cost_generic_log_male_0                      0.018446
+b_cost_generic_log_male_1                      0.164207
+b_headway_generic                              0.001573
+b_seat_generic                                 0.010569
+                                      b_headway_generic
+ASC_TRAIN                                     -0.008620
+ASC_SM                                        -0.003282
+b_time_generic_log_income_1                    0.004900
+b_time_generic_log_income_2                    0.002630
+b_time_generic_log_income_3                 -7.8081e-04
+b_time_generic_log_income_4                   -0.002104
+b_cost_generic_log_male_0                    -9.568e-06
+b_cost_generic_log_male_1                      0.001573
+b_headway_generic                              0.014616
+b_seat_generic                                -0.001134
+                                         b_seat_generic
+ASC_TRAIN                                    5.1564e-04
+ASC_SM                                        -0.002972
+b_time_generic_log_income_1                    0.001208
+b_time_generic_log_income_2                   -0.010814
+b_time_generic_log_income_3                   -0.003404
+b_time_generic_log_income_4                    0.003389
+b_cost_generic_log_male_0                     -0.003042
+b_cost_generic_log_male_1                      0.010569
+b_headway_generic                             -0.001134
+b_seat_generic                                 0.025039
+
+Classical correlation matrix:
+                                              ASC_TRAIN
+ASC_TRAIN                                      1.000000
+ASC_SM                                         0.388910
+b_time_generic_log_income_1                   -0.165612
+b_time_generic_log_income_2                   -0.158769
+b_time_generic_log_income_3                   -0.138048
+b_time_generic_log_income_4                   -0.107352
+b_cost_generic_log_male_0                      0.008668
+b_cost_generic_log_male_1                     -0.114236
+b_headway_generic                             -0.789736
+b_seat_generic                                 0.075264
+                                                 ASC_SM
+ASC_TRAIN                                       0.38891
+ASC_SM                                          1.00000
+b_time_generic_log_income_1                     0.36981
+b_time_generic_log_income_2                     0.44988
+b_time_generic_log_income_3                     0.49071
+b_time_generic_log_income_4                     0.30051
+b_cost_generic_log_male_0                      -0.07873
+b_cost_generic_log_male_1                      -0.19189
+b_headway_generic                              -0.37231
+b_seat_generic                                 -0.20242
+                            b_time_generic_log_income_1
+ASC_TRAIN                                      -0.16561
+ASC_SM                                          0.36981
+b_time_generic_log_income_1                     1.00000
+b_time_generic_log_income_2                     0.35368
+b_time_generic_log_income_3                     0.36042
+b_time_generic_log_income_4                     0.24609
+b_cost_generic_log_male_0                       0.02492
+b_cost_generic_log_male_1                       0.06674
+b_headway_generic                              -0.01637
+b_seat_generic                                  0.03493
+                            b_time_generic_log_income_2
+ASC_TRAIN                                     -0.158769
+ASC_SM                                         0.449883
+b_time_generic_log_income_1                    0.353676
+b_time_generic_log_income_2                    1.000000
+b_time_generic_log_income_3                    0.421358
+b_time_generic_log_income_4                    0.264295
+b_cost_generic_log_male_0                     -0.018776
+b_cost_generic_log_male_1                      0.109916
+b_headway_generic                              0.003850
+b_seat_generic                                -0.029211
+                            b_time_generic_log_income_3
+ASC_TRAIN                                     -0.138048
+ASC_SM                                         0.490712
+b_time_generic_log_income_1                    0.360424
+b_time_generic_log_income_2                    0.421358
+b_time_generic_log_income_3                    1.000000
+b_time_generic_log_income_4                    0.267521
+b_cost_generic_log_male_0                     -0.030936
+b_cost_generic_log_male_1                      0.235153
+b_headway_generic                              0.008087
+b_seat_generic                                -0.090361
+                            b_time_generic_log_income_4
+ASC_TRAIN                                      -0.10735
+ASC_SM                                          0.30051
+b_time_generic_log_income_1                     0.24609
+b_time_generic_log_income_2                     0.26429
+b_time_generic_log_income_3                     0.26752
+b_time_generic_log_income_4                     1.00000
+b_cost_generic_log_male_0                       0.02045
+b_cost_generic_log_male_1                       0.01458
+b_headway_generic                              -0.01074
+b_seat_generic                                  0.01992
+                              b_cost_generic_log_male_0
+ASC_TRAIN                                      0.008668
+ASC_SM                                        -0.078735
+b_time_generic_log_income_1                    0.024923
+b_time_generic_log_income_2                   -0.018776
+b_time_generic_log_income_3                   -0.030936
+b_time_generic_log_income_4                    0.020454
+b_cost_generic_log_male_0                      1.000000
+b_cost_generic_log_male_1                      0.038957
+b_headway_generic                            1.0168e-04
+b_seat_generic                                -0.028642
+                              b_cost_generic_log_male_1
+ASC_TRAIN                                     -0.114236
+ASC_SM                                        -0.191894
+b_time_generic_log_income_1                    0.066735
+b_time_generic_log_income_2                    0.109916
+b_time_generic_log_income_3                    0.235153
+b_time_generic_log_income_4                    0.014580
+b_cost_generic_log_male_0                      0.038957
+b_cost_generic_log_male_1                      1.000000
+b_headway_generic                              0.007223
+b_seat_generic                                 0.093815
+                                      b_headway_generic
+ASC_TRAIN                                     -0.789736
+ASC_SM                                        -0.372310
+b_time_generic_log_income_1                   -0.016375
+b_time_generic_log_income_2                    0.003850
+b_time_generic_log_income_3                    0.008087
+b_time_generic_log_income_4                   -0.010744
+b_cost_generic_log_male_0                    1.0168e-04
+b_cost_generic_log_male_1                      0.007223
+b_headway_generic                              1.000000
+b_seat_generic                                -0.006874
+                                         b_seat_generic
+ASC_TRAIN                                      0.075264
+ASC_SM                                        -0.202416
+b_time_generic_log_income_1                    0.034926
+b_time_generic_log_income_2                   -0.029211
+b_time_generic_log_income_3                   -0.090361
+b_time_generic_log_income_4                    0.019924
+b_cost_generic_log_male_0                     -0.028642
+b_cost_generic_log_male_1                      0.093815
+b_headway_generic                             -0.006874
+b_seat_generic                                 1.000000
+
+Robust correlation matrix:
+                                              ASC_TRAIN
+ASC_TRAIN                                      1.000000
+ASC_SM                                         0.163351
+b_time_generic_log_income_1                   -0.292831
+b_time_generic_log_income_2                   -0.254369
+b_time_generic_log_income_3                   -0.312789
+b_time_generic_log_income_4                   -0.082696
+b_cost_generic_log_male_0                     -0.008547
+b_cost_generic_log_male_1                     -0.215590
+b_headway_generic                             -0.550811
+b_seat_generic                                 0.025173
+                                                 ASC_SM
+ASC_TRAIN                                        0.1634
+ASC_SM                                           1.0000
+b_time_generic_log_income_1                      0.4545
+b_time_generic_log_income_2                      0.6200
+b_time_generic_log_income_3                      0.5431
+b_time_generic_log_income_4                      0.3397
+b_cost_generic_log_male_0                       -0.1978
+b_cost_generic_log_male_1                       -0.1460
+b_headway_generic                               -0.2126
+b_seat_generic                                  -0.1471
+                            b_time_generic_log_income_1
+ASC_TRAIN                                      -0.29283
+ASC_SM                                          0.45451
+b_time_generic_log_income_1                     1.00000
+b_time_generic_log_income_2                     0.42303
+b_time_generic_log_income_3                     0.44903
+b_time_generic_log_income_4                     0.22193
+b_cost_generic_log_male_0                      -0.04396
+b_cost_generic_log_male_1                       0.13414
+b_headway_generic                               0.06746
+b_seat_generic                                  0.01270
+                            b_time_generic_log_income_2
+ASC_TRAIN                                      -0.25437
+ASC_SM                                          0.62002
+b_time_generic_log_income_1                     0.42303
+b_time_generic_log_income_2                     1.00000
+b_time_generic_log_income_3                     0.56498
+b_time_generic_log_income_4                     0.28472
+b_cost_generic_log_male_0                      -0.06365
+b_cost_generic_log_male_1                       0.20262
+b_headway_generic                               0.03745
+b_seat_generic                                 -0.11766
+                            b_time_generic_log_income_3
+ASC_TRAIN                                      -0.31279
+ASC_SM                                          0.54308
+b_time_generic_log_income_1                     0.44903
+b_time_generic_log_income_2                     0.56498
+b_time_generic_log_income_3                     1.00000
+b_time_generic_log_income_4                     0.28526
+b_cost_generic_log_male_0                      -0.09453
+b_cost_generic_log_male_1                       0.37658
+b_headway_generic                              -0.01385
+b_seat_generic                                 -0.04612
+                            b_time_generic_log_income_4
+ASC_TRAIN                                      -0.08270
+ASC_SM                                          0.33967
+b_time_generic_log_income_1                     0.22193
+b_time_generic_log_income_2                     0.28472
+b_time_generic_log_income_3                     0.28526
+b_time_generic_log_income_4                     1.00000
+b_cost_generic_log_male_0                      -0.06210
+b_cost_generic_log_male_1                       0.06561
+b_headway_generic                              -0.02485
+b_seat_generic                                  0.03059
+                              b_cost_generic_log_male_0
+ASC_TRAIN                                     -0.008547
+ASC_SM                                        -0.197799
+b_time_generic_log_income_1                   -0.043956
+b_time_generic_log_income_2                   -0.063653
+b_time_generic_log_income_3                   -0.094526
+b_time_generic_log_income_4                   -0.062104
+b_cost_generic_log_male_0                      1.000000
+b_cost_generic_log_male_1                      0.059352
+b_headway_generic                           -1.0319e-04
+b_seat_generic                                -0.025063
+                              b_cost_generic_log_male_1
+ASC_TRAIN                                      -0.21559
+ASC_SM                                         -0.14604
+b_time_generic_log_income_1                     0.13414
+b_time_generic_log_income_2                     0.20262
+b_time_generic_log_income_3                     0.37658
+b_time_generic_log_income_4                     0.06561
+b_cost_generic_log_male_0                       0.05935
+b_cost_generic_log_male_1                       1.00000
+b_headway_generic                               0.03212
+b_seat_generic                                  0.16483
+                                      b_headway_generic
+ASC_TRAIN                                      -0.55081
+ASC_SM                                         -0.21256
+b_time_generic_log_income_1                     0.06746
+b_time_generic_log_income_2                     0.03745
+b_time_generic_log_income_3                    -0.01385
+b_time_generic_log_income_4                    -0.02485
+b_cost_generic_log_male_0                   -1.0319e-04
+b_cost_generic_log_male_1                       0.03212
+b_headway_generic                               1.00000
+b_seat_generic                                 -0.05926
+                                         b_seat_generic
+ASC_TRAIN                                       0.02517
+ASC_SM                                         -0.14706
+b_time_generic_log_income_1                     0.01270
+b_time_generic_log_income_2                    -0.11766
+b_time_generic_log_income_3                    -0.04612
+b_time_generic_log_income_4                     0.03059
+b_cost_generic_log_male_0                      -0.02506
+b_cost_generic_log_male_1                       0.16483
+b_headway_generic                              -0.05926
+b_seat_generic                                  1.00000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  ID Avg prob per choice
+ 394          0.04651987
+ 476          0.05134168
+ 104          0.05296818
+ 576          0.05769539
+ 652          0.07536188
+ 378          0.08570579
+ 937          0.09065931
+ 782          0.10038391
+ 796          0.10048737
+ 100          0.10099124
+ 309          0.10141739
+ 241          0.10663819
+ 578          0.10949210
+ 315          0.11384381
+ 393          0.12841658
+ 318          0.14037393
+  93          0.15120705
+ 276          0.15553932
+ 314          0.15980066
+ 392          0.16318967
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                                                                                             
+modelName              "1110_2212_3211_4110_5000_6110_7000"                                                              
+modelDescr             "MNL proposed by Delphos"                                                                         
+indivID                "id"                                                                                              
+outputDirectory        "/Users/gnova/Developer/Main-Delphos/Delphos/src/delphos/data/bundled/datasets/dataset_4/outputs/"
+debug                  "FALSE"                                                                                           
+nCores                 "1"                                                                                               
+workInLogs             "FALSE"                                                                                           
+seed                   "13"                                                                                              
+mixing                 "FALSE"                                                                                           
+HB                     "FALSE"                                                                                           
+noValidation           "FALSE"                                                                                           
+noDiagnostics          "FALSE"                                                                                           
+calculateLLC           "TRUE"                                                                                            
+analyticHessian        "FALSE"                                                                                           
+dropLoopExpansion      "FALSE"                                                                                           
+dropRedefCheck         "FALSE"                                                                                           
+memorySaver            "FALSE"                                                                                           
+panelData              "TRUE"                                                                                            
+analyticGrad           "TRUE"                                                                                            
+analyticGrad_manualSet "FALSE"                                                                                           
+overridePanel          "FALSE"                                                                                           
+preventOverridePanel   "FALSE"                                                                                           
+noModification         "FALSE"                                                                                           
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+
+apollo_probabilities
+----------------------
+function (apollo_beta, apollo_inputs, functionality = "estimate") 
+{
+    apollo_attach(apollo_beta, apollo_inputs)
+    on.exit(apollo_detach(apollo_beta, apollo_inputs))
+    P = list()
+    V = list()
+    V <- list()
+    V[["TRAIN"]] <- ASC_TRAIN + b_time_generic_log_income_1 * 
+        (income == 1) * log(1 + train_tt_scaled) + b_time_generic_log_income_2 * 
+        (income == 2) * log(1 + train_tt_scaled) + b_time_generic_log_income_3 * 
+        (income == 3) * log(1 + train_tt_scaled) + b_time_generic_log_income_4 * 
+        (income == 4) * log(1 + train_tt_scaled) + b_cost_generic_log_male_0 * 
+        (male == 0) * log(1 + train_cost_scaled) + b_cost_generic_log_male_1 * 
+        (male == 1) * log(1 + train_cost_scaled) + b_headway_generic * 
+        train_he_scaled
+    V[["SM"]] <- ASC_SM + b_time_generic_log_income_1 * (income == 
+        1) * log(1 + sm_tt_scaled) + b_time_generic_log_income_2 * 
+        (income == 2) * log(1 + sm_tt_scaled) + b_time_generic_log_income_3 * 
+        (income == 3) * log(1 + sm_tt_scaled) + b_time_generic_log_income_4 * 
+        (income == 4) * log(1 + sm_tt_scaled) + b_cost_generic_log_male_0 * 
+        (male == 0) * log(1 + sm_cost_scaled) + b_cost_generic_log_male_1 * 
+        (male == 1) * log(1 + sm_cost_scaled) + b_headway_generic * 
+        sm_he_scaled + b_seat_generic * sm_seats_scaled
+    V[["CAR"]] <- ASC_CAR + b_time_generic_log_income_1 * (income == 
+        1) * log(1 + car_tt_scaled) + b_time_generic_log_income_2 * 
+        (income == 2) * log(1 + car_tt_scaled) + b_time_generic_log_income_3 * 
+        (income == 3) * log(1 + car_tt_scaled) + b_time_generic_log_income_4 * 
+        (income == 4) * log(1 + car_tt_scaled) + b_cost_generic_log_male_0 * 
+        (male == 0) * log(1 + car_co_scaled) + b_cost_generic_log_male_1 * 
+        (male == 1) * log(1 + car_co_scaled)
+    mnl_settings = list(alternatives = c(TRAIN = 1, SM = 2, CAR = 3), 
+        avail = list(TRAIN = train_av, SM = sm_av, CAR = car_av), 
+        choiceVar = choice, utilities = V)
+    P[["model"]] = apollo_mnl(mnl_settings, functionality)
+    P = apollo_panelProd(P, apollo_inputs, functionality)
+    P = apollo_prepareProb(P, apollo_inputs, functionality)
+    return(P)
+}
